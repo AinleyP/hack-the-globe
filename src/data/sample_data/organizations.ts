@@ -2,6 +2,7 @@
 
 import Organization from "../types/organization";
 import RelationshipStatus from '../types/relationshipStatus'
+import {Resource} from '../types/responsiblity'
 
 const organizations: Array<Organization> = [
   {
@@ -19,7 +20,7 @@ const organizations: Array<Organization> = [
     supportingTags: [],
     personalMessage:
       "APCF was great to work with. Remind me to add more text here!",
-    resourcesOffered: ["Funding", "Outreach Officers", "Legal Counsel"],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.sound],
     eventsHelped: "63",
     sponsorshipToDate: "$426,794",
     website: "https://www.apcf.org/current-grants",
@@ -39,6 +40,7 @@ const organizations: Array<Organization> = [
     county: "DISTRICT OF COLUMBIA",
     type: "Advocacy",
     status: RelationshipStatus.suggested,
+    resourcesOffered: [Resource.training, Resource.outreach, Resource.sound],
     image: "https://source.unsplash.com/Ch_QF4IocbU/150x150"
   },
   {

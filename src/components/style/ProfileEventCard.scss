@@ -1,0 +1,30 @@
+.profile-event-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: $card-height;
+  width: 530px;
+
+  @include card-border;
+
+  & img {
+    height: $card-height;
+    width: $card-height;
+    border-radius: 5px;
+  }
+
+  &-text {
+    @include normal-text;
+
+    margin-left: 27px;
+    & h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &p {
+      font-size: 13px;
+    }
+  }
+}

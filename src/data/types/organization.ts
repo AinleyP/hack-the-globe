@@ -1,4 +1,5 @@
 import RelationshipStatus from './relationshipStatus'
+import { Resource } from './responsiblity'
 
 export default interface Organization {
   id: string;
@@ -15,7 +16,7 @@ export default interface Organization {
   bio?: string;
   supportingTags?: Array<string>;
   personalMessage?: string;
-  resourcesOffered?: Array<string>;
+  resourcesOffered?: Array<Resource>;
   eventsHelped?: string;
   sponsorshipToDate?: string;
   website?: string;

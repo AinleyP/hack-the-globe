@@ -4,8 +4,8 @@ import React from "react";
 import './App.scss';
 import SamplePage from './pages/SamplePage'
 import Navbar from './components/Navbar'
-import OrganizationAndVolunteerList from './components/OrganizationAndVolunteerList'
-import organizations from './data/sample_data/organizations'
+import ProfileEventCard from './components/ProfileEventCard'
+import events from './data/sample_data/events'
 
 function App(): JSX.Element {
   return (
@@ -17,7 +17,7 @@ function App(): JSX.Element {
         <Route path='/pending-requests'><Navbar /></Route>
         <Route path='/events'><Navbar /></Route>
         <Route path='/settings'><Navbar /></Route>
-        <Route path='/'><OrganizationAndVolunteerList organizations={organizations} volunteers={[]}  /></Route>
+        <Route path='/'><ProfileEventCard event={events[2]}  /></Route>
       </Switch>
     </Router>
   );
