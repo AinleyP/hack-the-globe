@@ -1,4 +1,4 @@
-import RelationshipStatus from './relationshipStatus'
+import RelationshipStatus from './relationshipStatus';
 
 export default interface Organization {
   id: string;
@@ -9,7 +9,7 @@ export default interface Organization {
   city: string;
   county: string;
   type: string;
-  status: RelationshipStatus;
+  status?: RelationshipStatus;
   image: string;
 
   bio?: string;
