@@ -1,0 +1,72 @@
+$pill-height: 40px;
+
+.my-navbar {
+  @include normal-text;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: $light-brown;
+
+  &.nav {
+    padding: 24px 19px 0;
+  }
+
+  & a {
+    @include normal-text;
+  }
+
+  &-pill {
+    height: $pill-height;
+    margin-bottom: 15px;
+    & span {
+      display: flex;
+      align-items: center;
+      height: $pill-height;
+      & label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 40px;
+        margin: 0;
+      }
+    }
+  }
+
+  &-icon {
+    margin-right: 15px;
+  }
+
+  &-user-info {
+    display: flex;
+    align-items: center;
+    height: $pill-height;
+    & img {
+      border-radius: 3px;
+      width: $pill-height;
+      margin-right: 15px;
+      // height: 20%;
+    }
+
+    & h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+
+  &-link-pill {
+    display: flex;
+    align-items: center;
+  }
+
+  &.nav-pills .nav-link.active,
+  &.nav-pills .show > .nav-link {
+    color: $brown-text-color;
+    background-color: $selected-light-brown;
+    margin: 0;
+    padding-top: 0;
+  }
+}

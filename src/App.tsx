@@ -3,13 +3,18 @@ import React from "react";
 
 import './App.scss';
 import SamplePage from './pages/SamplePage'
+import Navbar from './components/Navbar'
 
 function App(): JSX.Element {
   return (
     <Router>
       <Switch>
-        <Route path='/login'><SamplePage pageName="login" /></Route>
-        <Route path='/'><SamplePage pageName="home" /></Route>
+        <Route path='/sample'><SamplePage pageName="home" /></Route>
+        <Route path='/profile'><Navbar /></Route>
+        <Route path='/matches'><Navbar /></Route>
+        <Route path='/pending-requests'><Navbar /></Route>
+        <Route path='/events'><Navbar /></Route>
+        <Route path='/settings'><Navbar /></Route>
       </Switch>
     </Router>
   );

@@ -8,12 +8,12 @@ import { combineReducers } from 'redux';
 /* Imports from local files */
 import organizationsReducer from './organizationsReducer'
 // import volunteersReducer from './volunteersReducer'
-// import activistReducer from './activistReducer'
+import activistReducer from './activistReducer'
 
 const rootReducer = combineReducers({
   organizations: organizationsReducer,
   // voluteers: volunteersReducer,
-  // activist: activistReducer,
+  activist: activistReducer,
 });
 
 export default rootReducer

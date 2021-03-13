@@ -1,0 +1,22 @@
+$light-brown: #FDFAF4;
+$selected-light-brown: #F5F1E9;
+
+$font-stack: 'SF Pro Text', sans-serif;
+$normal-text-color: #42526E;
+$brown-text-color: #6A4E2E;
+
+@mixin text() {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin normal-text() {
+  @include text;
+  color: $normal-text-color;
+}
+
+@mixin brown-text() {
+  @include text;
+  color: $brown-text-color;
+}

@@ -1,2 +1,16 @@
+ @import 'common';
  @import '../components/style';
- @import '../pages/style'
+ @import '../pages/style';
+
+body {
+  @include normal-text;
+  // prevent wrapping from hyphenating words
+  -webkit-hyphens: none;
+  -moz-hyphens:    none;
+  -ms-hyphens:     none;
+  hyphens:         none;
+}
+
+#root > div {
+  min-height: 100vh;
+}
