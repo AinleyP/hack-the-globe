@@ -11,6 +11,10 @@ function App(): JSX.Element {
       <Switch>
         <Route path='/sample'><SamplePage pageName="home" /></Route>
         <Route path='/profile'><Navbar /></Route>
+        <Route path='/matches'><Navbar /></Route>
+        <Route path='/pending-requests'><Navbar /></Route>
+        <Route path='/events'><Navbar /></Route>
+        <Route path='/settings'><Navbar /></Route>
       </Switch>
     </Router>
   );
