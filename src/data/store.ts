@@ -7,7 +7,8 @@ import thunk from "redux-thunk";
 
 /* Imports from local files */
 import rootReducer, { RootState } from './reducers'
-import organizations from './sample_data/organizations'
+import sampleOrganizations from './sample_data/organizations'
+import sampleActivist from './sample_data/activist'
 
 const persistConfig = {
   key: 'root',
@@ -20,14 +21,16 @@ const DEFAULT_STATE: RootState = {
   organizations :{
     suggested:[],
     matched:[],
-    all: organizations
+    all: sampleOrganizations
   },
   // volunteers: {
   //   suggested:[],
   //   matched:[],
   //   all: []
   // },
-  // activist: null,
+  activist: {
+    data: sampleActivist
+  },
 };
 
 export const store = createStore<RootState & PersistPartial, any, any, any>(persistedReducer, DEFAULT_STATE, applyMiddleware(thunk))

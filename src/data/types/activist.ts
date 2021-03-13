@@ -1,1 +1,5 @@
-export default interface Activist {}
+export default interface Activist {
+  id: number,
+  name: string,
+  image: string
+}

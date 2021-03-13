@@ -3,5 +3,5 @@
  */
 export * from "./organizationsActions";
 // export * from "./volunteersActions";
-// export * from "./activistActions";
+export * from "./activistActions";
 
