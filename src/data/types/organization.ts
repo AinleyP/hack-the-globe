@@ -1,4 +1,10 @@
 export default interface Organization {
-  id: number,
-  name: string
+  id: string;
+  name: string;
+  foundingYear: string;
+  address: string;
+  state: string;
+  city: string;
+  county: string;
+  type: string;
 }
