@@ -18,14 +18,14 @@ const organizations: Array<Organization> = [
     supportingTags: [],
     personalMessage:
       "APCF was great to work with. Remind me to add more text here!",
-    resourcesOffered: [],
+    resourcesOffered: ["Funding", "Outreach Officers", "Legal Counsel"],
     eventsHelped: "63",
     sponsorshipToDate: "$426,794",
     website: "https://www.apcf.org/current-grants",
     pointsOfContact: [],
     pastEvents: [],
     testimonials: [],
-    status: OrganizationStatus.suggested,
+    status: OrganizationStatus.requested,
     image: "https://source.unsplash.com/Ch_QF4IocbU/150x150"
   },
   {

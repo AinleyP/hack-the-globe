@@ -5,6 +5,7 @@ import { connect, ConnectedProps } from "react-redux";
 import { acceptRequestFromOrg, sendRequestToOrg } from '../data/actions/organizationsActions'
 import Organization, { OrganizationStatus } from '../data/types/organization'
 import { RootState } from '../data/reducers'
+import Tags from './Tags'
 
 interface DispatchProps {
   acceptRequestFromOrg: typeof acceptRequestFromOrg,
@@ -53,11 +54,22 @@ const OrganizationCard = (props: Props): JSX.Element => {
     }
   }
 
+  const renderRequestIndicator = () => {
+    if (props.org.status === OrganizationStatus.requested) {
+      return <div className="organization-card-request-indicator">Connected with you</div>
+
+    }
+  }
+
   return <div className="organization-card">
     <img src={props.org.image} />
     <div className="organization-card-text">
-      <h1>{props.org.name}</h1>
+      <div className="organization-card-title-section">
+        <h1>{props.org.name}</h1>
+        {renderRequestIndicator()}
+      </div>
       <p>{props.org.bio ? `${props.org.bio.substring(0, 300)}...` : ""}</p>
+      <Tags tags={props.org.resourcesOffered ? props.org.resourcesOffered : []} />
     </div>
     <div className="organization-card-buttons-div">
       <button className="organization-card-view-details-button organization-card-button">View Details</button>

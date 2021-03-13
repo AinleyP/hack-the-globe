@@ -1,4 +1,4 @@
-$card-height: 160px;
+$card-height: 200px;
 
 .organization-card {
   display: flex;
@@ -26,9 +26,11 @@ $card-height: 160px;
     flex-direction: column;
     margin-left: 30px;
     margin-right: 40px;
+
     & h1 {
       font-weight: bold;
       font-size: 24px;
+      margin: 0;
     }
     & p {
     }
@@ -70,4 +72,21 @@ $card-height: 160px;
     background-color: #b8cdf3;
     color: black;
   }
+
+  &-request-indicator {
+    background-color: #41A35C;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 12px;
+    width: 170px;
+    margin-left: 50px;
+  }
+
+  &-title-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+  }
 }
+
