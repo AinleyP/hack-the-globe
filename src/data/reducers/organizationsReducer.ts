@@ -1,6 +1,7 @@
 /* Imports from local files */
 import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG, ACCEPT_REQUEST_FROM_ORG, SEND_REQUEST_TO_ORG } from "../actions/actionTypes";
-import Organization, { OrganizationStatus } from '../types/organization'
+import Organization from '../types/organization'
+import RelationshipStatus from '../types/relationshipStatus'
 import { OrganizationsAction } from '../actions/'
 
 export interface OrganzationsState {
@@ -43,7 +44,7 @@ export default (state = defaultState, action: OrganizationsAction): Organzations
         ...state,
         data: stateCopy.data.map((org: Organization) => {
           if (org.id === action.payload.id) {
-            org.status = OrganizationStatus.matched
+            org.status = RelationshipStatus.matched
           }
           return org
         })
@@ -54,7 +55,7 @@ export default (state = defaultState, action: OrganizationsAction): Organzations
         ...state,
         data: stateCopy.data.map((org: Organization) => {
           if (org.id === action.payload.id) {
-            org.status = OrganizationStatus.pending
+            org.status = RelationshipStatus.pending
           }
           return org
         })

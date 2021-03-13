@@ -4,7 +4,7 @@ interface Props {
 
 const Tags = (props: Props): JSX.Element => {
   return <div className="tag-row">
-    {props.tags.map((tag: string) => <div className='tag-row-tag'>{tag}</div>)}
+    {props.tags.map((tag: string) => <div key={tag} className='tag-row-tag'>{tag}</div>)}
   </div>
 };
 
