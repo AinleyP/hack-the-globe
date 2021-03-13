@@ -1,0 +1,73 @@
+$card-height: 160px;
+
+.organization-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: $card-height;
+  padding-right: 24px;
+
+  border-style: solid;
+  border-color: $light-grey;
+  border-radius: 5px;
+  border-width: 1px;
+
+  & img {
+    border-radius: 5px;
+    width: $card-height;
+    height: $card-height;
+  }
+
+  &-text {
+    @include normal-text();
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 40px;
+    & h1 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    & p {
+    }
+  }
+
+  &-buttons-div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  &-button {
+    font-size: 18px;
+    color: white;
+    border: none;
+    height: 44px;
+    border-radius: 3px;
+  }
+
+  &-view-details-button {
+    background-color: #253858;
+    margin-bottom: 7px;
+  }
+
+  &-accept-button {
+    background-color: #a54c36;
+  }
+
+  &-connect-button {
+    background-color: #a54c36;
+  }
+
+  &-pending-button {
+    background-color: #f5f6f7;
+    color: black;
+  }
+
+  &-accepted-button {
+    background-color: #b8cdf3;
+    color: black;
+  }
+}

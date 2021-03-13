@@ -1,7 +1,7 @@
 import { AnyAction } from 'redux'
 
 /* Imports from local files */
-import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG } from "./actionTypes";
+import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG, ACCEPT_REQUEST_FROM_ORG, SEND_REQUEST_TO_ORG } from "./actionTypes";
 import Organization from '../types/organization'
 
 /**
@@ -28,5 +28,15 @@ export const addSuggestedOrg = (data: Organization): OrganizationsAction => ({
 
 export const addOrg = (data: Organization): OrganizationsAction => ({
   type: ADD_ORG,
+  payload: data,
+});
+
+export const acceptRequestFromOrg = (data: Organization): OrganizationsAction => ({
+  type: ACCEPT_REQUEST_FROM_ORG,
+  payload: data,
+});
+
+export const sendRequestToOrg = (data: Organization): OrganizationsAction => ({
+  type: SEND_REQUEST_TO_ORG,
   payload: data,
 });
