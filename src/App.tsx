@@ -4,7 +4,7 @@ import React from "react";
 import './App.scss';
 import SamplePage from './pages/SamplePage'
 import Navbar from './components/Navbar'
-import OrganizationCard from './components/OrganizationCard'
+import OrganizationAndVolunteerList from './components/OrganizationAndVolunteerList'
 import organizations from './data/sample_data/organizations'
 
 function App(): JSX.Element {
@@ -17,7 +17,7 @@ function App(): JSX.Element {
         <Route path='/pending-requests'><Navbar /></Route>
         <Route path='/events'><Navbar /></Route>
         <Route path='/settings'><Navbar /></Route>
-        <Route path='/'><OrganizationCard org={organizations[0]}  /></Route>
+        <Route path='/'><OrganizationAndVolunteerList organizations={organizations} volunteers={[]}  /></Route>
       </Switch>
     </Router>
   );

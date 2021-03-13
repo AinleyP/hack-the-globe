@@ -1,10 +1,4 @@
-export enum OrganizationStatus {
-  requested, // Organization has sent request to the activist
-  pending,  // Organization which the activist has sent a request to
-  suggested,
-  matched, 
-  noRelation
-}
+import RelationshipStatus from './relationshipStatus'
 
 export default interface Organization {
   id: string;
@@ -15,7 +9,7 @@ export default interface Organization {
   city: string;
   county: string;
   type: string;
-  status: OrganizationStatus;
+  status: RelationshipStatus;
   image: string;
 
   bio?: string;
