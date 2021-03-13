@@ -5,13 +5,25 @@ import Organization from "../types/organization";
 const organizations: Array<Organization> = [
   {
     id: "1",
-    name: "Asian and Pacific Islander American Health Forum",
-    foundingYear: "1986",
-    address: "1 Kaiser Plz Ste 850 Oakland, CA 94612",
+    name: "Asian Pacific Community Fund of Southern California",
+    foundingYear: "1990",
+    address: "1145 Wilshire Blvd #105, Los Angeles, CA 90017",
     state: "CA",
-    city: "OAKLAND",
-    county: "ALAMEDA",
-    type: "Advocacy",
+    city: "LOS ANGELES",
+    county: "LOS ANGELES",
+    type: "CSO",
+
+    bio:
+      "APCF was founded in 1990 by API community leaders in response to the need for alternative funding for Los Angeles-based nonprofit organizations serving API communities. Prior to its incorporation, less than 0.3% of all local foundation funds went to API agencies, according to a 1988 study by A3PCON (Asian Pacific Policy & Planning Council). In 1986, the United Way of Greater Los Angeles funded only five organizations serving APIs. To raise funds for community organizations serving API communities, APCF initiated employee giving campaigns at various workplaces, including private companies, federal agencies, state agencies, county agencies, city agencies, and nonprofit organizations. In the past decade, APCF has diversified its fundraising efforts by developing other avenues for giving. With the growth of donor-advised funds, giving circles, grant making, scholarship funds, and capacity building initiatives, APCF has been able to cultivate philanthropy among APIs while providing multiple vehicles for donors to support the community.",
+    supportingTags: [],
+    personalMessage:
+      "APCF was great to work with. Remind me to add more text here!",
+    resourcesOffered: [],
+    eventsHelped: "63",
+    sponsorshipToDate: "$426,794",
+    website: "https://www.apcf.org/current-grants",
+    pointsOfContact: [],
+    testimonials: [],
   },
   {
     id: "2",
@@ -468,7 +480,7 @@ const organizations: Array<Organization> = [
     id: "47",
     name: "80-20 Initiative",
     foundingYear: "1998",
-    address: "",
+
     state: "",
     city: "",
     county: "",
@@ -478,7 +490,7 @@ const organizations: Array<Organization> = [
     id: "48",
     name: "Asian American Environmental Awareness Organization",
     foundingYear: "1999",
-    address: "",
+
     state: "MD",
     city: "CLARKSVILLE",
     county: "HOWARD",
@@ -488,7 +500,7 @@ const organizations: Array<Organization> = [
     id: "49",
     name: "Asian American Parents Association",
     foundingYear: "1991",
-    address: "",
+
     state: "CA",
     city: "CUPERTINO",
     county: "SANTA CLARA",
@@ -498,7 +510,7 @@ const organizations: Array<Organization> = [
     id: "50",
     name: "National AAPI DACA Collaborative",
     foundingYear: "2012",
-    address: "",
+
     state: "CA",
     city: "LOS ANGELES",
     county: "LOS ANGELES",
@@ -687,13 +699,13 @@ const organizations: Array<Organization> = [
   },
   {
     id: "69",
-    name: "Asian Pacific Community Fund of Southern California",
-    foundingYear: "1990",
-    address: "1145 Wilshire Blvd #105, Los Angeles, CA 90017",
+    name: "Asian and Pacific Islander American Health Forum",
+    foundingYear: "1986",
+    address: "1 Kaiser Plz Ste 850 Oakland, CA 94612",
     state: "CA",
-    city: "LOS ANGELES",
-    county: "LOS ANGELES",
-    type: "CSO",
+    city: "OAKLAND",
+    county: "ALAMEDA",
+    type: "Advocacy",
   },
   {
     id: "70",
@@ -2444,7 +2456,7 @@ const organizations: Array<Organization> = [
     id: "244",
     name: "ASHA for Women",
     foundingYear: "1989",
-    address: "",
+
     state: "MD",
     city: "ROCKVILLE",
     county: "MONTGOMERY",
@@ -2454,7 +2466,7 @@ const organizations: Array<Organization> = [
     id: "245",
     name: "Asian American Cancer Support Network",
     foundingYear: "2003",
-    address: "",
+
     state: "CA",
     city: "SUNNYVALE",
     county: "SANTA CLARA",
@@ -2464,7 +2476,7 @@ const organizations: Array<Organization> = [
     id: "246",
     name: "Asian American Education Association of Palm Beach County",
     foundingYear: "2015",
-    address: "",
+
     state: "FL",
     city: "BOCA RATON",
     county: "PALM BEACH",
@@ -2474,7 +2486,7 @@ const organizations: Array<Organization> = [
     id: "247",
     name: "Asian and Pacific Islander Family Pride",
     foundingYear: "2004",
-    address: "",
+
     state: "CA",
     city: "FREMONT",
     county: "ALAMEDA",
@@ -2484,7 +2496,7 @@ const organizations: Array<Organization> = [
     id: "248",
     name: "Asian Family Support Services of Austin",
     foundingYear: "1992",
-    address: "",
+
     state: "TX",
     city: "AUSTIN",
     county: "AUSTIN",
@@ -2494,7 +2506,7 @@ const organizations: Array<Organization> = [
     id: "249",
     name: "Asian Focus Corporation",
     foundingYear: "2010",
-    address: "",
+
     state: "NC",
     city: "MORRISVILLE",
     county: "WAKE",
@@ -2504,7 +2516,7 @@ const organizations: Array<Organization> = [
     id: "250",
     name: "Asian Pacific Islander Domestic Violence Resource Project",
     foundingYear: "1996",
-    address: "",
+
     state: "DC",
     city: "WASHINGTON DC",
     county: "DISTRICT OF COLUMBIA",
@@ -2514,7 +2526,7 @@ const organizations: Array<Organization> = [
     id: "251",
     name: "Asian Pacific Islander Pride",
     foundingYear: "1993",
-    address: "",
+
     state: "OR",
     city: "PORTLAND",
     county: "MULTNOMAH",
@@ -2524,7 +2536,7 @@ const organizations: Array<Organization> = [
     id: "252",
     name: "Asian Pacific Rim Foundation",
     foundingYear: "1998",
-    address: "",
+
     state: "CA",
     city: "SACRAMENTO",
     county: "SACRAMENTO",
@@ -2534,7 +2546,7 @@ const organizations: Array<Organization> = [
     id: "253",
     name: "IRCO Asian Family Center",
     foundingYear: "1994",
-    address: "",
+
     state: "OR",
     city: "PORTLAND",
     county: "MULTNOMAH",
@@ -2544,7 +2556,7 @@ const organizations: Array<Organization> = [
     id: "254",
     name: "Riverside Asian American Community Association",
     foundingYear: "2004",
-    address: "",
+
     state: "CA",
     city: "RIVERSIDE",
     county: "RIVERSIDE",
@@ -2554,7 +2566,7 @@ const organizations: Array<Organization> = [
     id: "255",
     name: "Southwest Center for Asian Pacific American Law",
     foundingYear: "2000",
-    address: "",
+
     state: "CA",
     city: "SAN DIEGO",
     county: "SAN DIEGO",
@@ -2988,7 +3000,6 @@ const organizations: Array<Organization> = [
     id: "298",
     name: "Asian American National Committee",
     foundingYear: "2000",
-    address: "",
     state: "MA",
     city: "DORCHESTER",
     county: "SUFFOLK",
@@ -2998,7 +3009,6 @@ const organizations: Array<Organization> = [
     id: "299",
     name: "Gay Asian and Pacific Islander Men of New York",
     foundingYear: "1990",
-    address: "",
     state: "NY",
     city: "NEW YORK",
     county: "NEW YORK",
