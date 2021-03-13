@@ -26,7 +26,7 @@ const OrganizationCard = (props: Props): JSX.Element => {
       case RelationshipStatus.suggested:
         return <button
           className="organization-card-button organization-card-connect-button"
-          onClick={() => { props.acceptRequestFromOrg(props.org) }}>
+          onClick={() => { props.sendRequestToOrg(props.org) }}>
           Connect
           </button>
         break;
