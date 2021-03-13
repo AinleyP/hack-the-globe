@@ -3,7 +3,6 @@ import React from 'react';
 import organizations from '../data/sample_data/organizations';
 import Organization from '../data/types/organization';
 
-
 // import SampleComponent from "../components/SampleComponent";
 
 interface Props {
