@@ -1,4 +1,5 @@
 import RelationshipStatus from './relationshipStatus'
+import { Resource } from './responsiblity'
 
 export default interface Volunteer {
   id: string,
@@ -6,5 +7,5 @@ export default interface Volunteer {
   bio?: string,
   status: RelationshipStatus,
   image: string,
-  resourcesOffered: Array<string>
+  resourcesOffered: Array<Resource>
 }

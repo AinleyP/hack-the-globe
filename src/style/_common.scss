@@ -24,3 +24,10 @@ $brown-text-color: #6A4E2E;
   @include text;
   color: $brown-text-color;
 }
+
+@mixin card-border() {
+  border-style: solid;
+  border-color: $light-grey;
+  border-radius: 5px;
+  border-width: 1px;
+}
