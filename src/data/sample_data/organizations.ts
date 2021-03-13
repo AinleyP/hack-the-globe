@@ -23,6 +23,7 @@ const organizations: Array<Organization> = [
     sponsorshipToDate: "$426,794",
     website: "https://www.apcf.org/current-grants",
     pointsOfContact: [],
+    pastEvents: [],
     testimonials: [],
   },
   {

@@ -16,5 +16,6 @@ export default interface Organization {
   sponsorshipToDate?: string;
   website?: string;
   pointsOfContact?: Array<any>;
+  pastEvents?: Array<any>;
   testimonials?: Array<any>;
 }
