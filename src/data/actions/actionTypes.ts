@@ -7,5 +7,6 @@ export const ADD_MATCHED_ORG = 'add_matched_org';
 export const ADD_SUGGESTED_ORG = 'add_suggested_org';
 export const ADD_ORG = 'add_org';
 
-export const ADD_RESPONSIBLITY = 'add_responsiblity';
 export const SET_LOCATION = 'set_location';
+export const ADD_RESPONSIBLITY = 'add_responsiblity';
+export const CLEAR_RESPONSIBILITIES = 'clear_responsibilities';

@@ -1,7 +1,7 @@
 import { AnyAction } from 'redux';
 
 /* Imports from local files */
-import { ADD_RESPONSIBLITY, SET_LOCATION } from './actionTypes';
+import { ADD_RESPONSIBLITY, CLEAR_RESPONSIBILITIES, SET_LOCATION } from './actionTypes';
 import Event from '../types/event';
 import Responsiblity from '../types/responsiblity';
 
@@ -28,4 +28,9 @@ export const addResponsiblity = (data: Event, responsiblity: Responsiblity): Eve
   type: ADD_RESPONSIBLITY,
   payload: data,
   responsiblity,
+});
+
+export const clearResponsibilities = (data: Event): EventAction => ({
+  type: CLEAR_RESPONSIBILITIES,
+  payload: data,
 });

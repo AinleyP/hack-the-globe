@@ -1,5 +1,5 @@
 /* Imports from local files */
-import { ADD_RESPONSIBLITY, SET_LOCATION } from '../actions/actionTypes';
+import { ADD_RESPONSIBLITY, CLEAR_RESPONSIBILITIES, SET_LOCATION } from '../actions/actionTypes';
 import Event from '../types/event';
 import { EventAction } from '../actions/eventActions';
 
@@ -14,15 +14,20 @@ const defaultState: Event = {
  */
 const eventReducer = (state = defaultState, action: EventAction): Event => {
   switch (action.type) {
+    case SET_LOCATION:
+      return {
+        ...state,
+        location: action.location!,
+      };
     case ADD_RESPONSIBLITY:
       return {
         ...state,
         responsiblities: [...state.responsiblities, action.responsiblity!],
       };
-    case SET_LOCATION:
+    case CLEAR_RESPONSIBILITIES:
       return {
         ...state,
-        location: action.location!,
+        responsiblities: [],
       };
     default:
       return state;
