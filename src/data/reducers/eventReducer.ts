@@ -1,5 +1,5 @@
 /* Imports from local files */
-import { ADD_RESPONSIBLITY } from '../actions/actionTypes';
+import { ADD_RESPONSIBLITY, SET_LOCATION } from '../actions/actionTypes';
 import Event from '../types/event';
 import { EventAction } from '../actions/eventActions';
 
@@ -18,6 +18,11 @@ const eventReducer = (state = defaultState, action: EventAction): Event => {
       return {
         ...state,
         responsiblities: [...state.responsiblities, action.responsiblity!],
+      };
+    case SET_LOCATION:
+      return {
+        ...state,
+        location: action.location!,
       };
     default:
       return state;

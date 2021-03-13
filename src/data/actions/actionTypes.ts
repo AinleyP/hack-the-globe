@@ -8,3 +8,4 @@ export const ADD_SUGGESTED_ORG = 'add_suggested_org';
 export const ADD_ORG = 'add_org';
 
 export const ADD_RESPONSIBLITY = 'add_responsiblity';
+export const SET_LOCATION = 'set_location';
