@@ -19,9 +19,7 @@ const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 const DEFAULT_STATE: RootState = {
   organizations :{
-    suggested:[],
-    matched:[],
-    all: sampleOrganizations
+    data: sampleOrganizations
   },
   // volunteers: {
   //   suggested:[],

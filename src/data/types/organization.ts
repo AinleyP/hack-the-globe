@@ -1,3 +1,11 @@
+export enum OrganizationStatus {
+  requested, // Organization has sent request to the activist
+  pending,  // Organization which the activist has sent a request to
+  suggested,
+  matched, 
+  noRelation
+}
+
 export default interface Organization {
   id: string;
   name: string;
@@ -7,6 +15,8 @@ export default interface Organization {
   city: string;
   county: string;
   type: string;
+  status: OrganizationStatus;
+  image: string;
 
   bio?: string;
   supportingTags?: Array<string>;
