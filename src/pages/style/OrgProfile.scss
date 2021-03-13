@@ -1,0 +1,21 @@
+.org-profile-page {
+  margin: 2em 0em;
+
+  .test {
+    border: 1px solid red;
+  }
+
+  .logo {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    color: red;
+    border: 1px solid red;
+  }
+
+  .grey-banner {
+    background: #f8f8f8;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 2em 0em;
+  }
+}
