@@ -1,18 +1,14 @@
 /* Imports from local files */
-import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG } from "../actions/actionTypes";
-import Organization from '../types/organization'
+import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG, ACCEPT_REQUEST_FROM_ORG, SEND_REQUEST_TO_ORG } from "../actions/actionTypes";
+import Organization, { OrganizationStatus } from '../types/organization'
 import { OrganizationsAction } from '../actions/'
 
 export interface OrganzationsState {
-  suggested: Array<Organization>,
-  matched: Array<Organization>,
-  all: Array<Organization>
+  data: Array<Organization>
 }
 
 const defaultState: OrganzationsState = {
-  suggested: [],
-  matched: [],
-  all: []
+  data: []
 };
 
 /**
@@ -20,23 +16,48 @@ const defaultState: OrganzationsState = {
  * these replacements should be immutable.
  */
 export default (state = defaultState, action: OrganizationsAction): OrganzationsState => {
-  let new_orgs = state.all.map((org: Organization) => org);
+  let stateCopy = {
+    data: state.data.map((org: Organization) => org)
+  }
+
   switch (action.type) {
     // directly sets the global data to the payload as specified in the action
     case ADD_ORG:
-      new_orgs.push(action.payload)
+      stateCopy.data.push(action.payload)
       return {
         ...state,
-        all: new_orgs
+        data: stateCopy.data
       };
     case ADD_MATCHED_ORG:
       return {
         ...state
-        
+
       };
     case ADD_SUGGESTED_ORG:
       return {
         ...state
+      };
+    case ACCEPT_REQUEST_FROM_ORG:
+      // Move org from requested to matched
+      return {
+        ...state,
+        data: stateCopy.data.map((org: Organization) => {
+          if (org.id === action.payload.id) {
+            org.status = OrganizationStatus.matched
+          }
+          return org
+        })
+      };
+    case SEND_REQUEST_TO_ORG:
+      // Move org from suggested to pending
+      return {
+        ...state,
+        data: stateCopy.data.map((org: Organization) => {
+          if (org.id === action.payload.id) {
+            org.status = OrganizationStatus.pending
+          }
+          return org
+        })
       };
     default:
       return state;
