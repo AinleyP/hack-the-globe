@@ -1,6 +1,7 @@
 // dataset available at: https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/FLUPBJ/I1XEOW&version=6.0
 
-import Organization, { OrganizationStatus } from '../types/organization';
+import Organization from '../types/organization';
+import RelationshipStatus from '../types/relationshipStatus';
 
 const organizations: Array<Organization> = [
   {
@@ -23,7 +24,7 @@ const organizations: Array<Organization> = [
     pointsOfContact: [],
     pastEvents: [],
     testimonials: [],
-    status: OrganizationStatus.requested,
+    status: RelationshipStatus.requested,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -35,7 +36,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    status: OrganizationStatus.suggested,
+    status: RelationshipStatus.suggested,
     resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Training', 'Safety Personnel', 'Legal Counsel'],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
@@ -48,7 +49,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'Advocacy',
-    status: OrganizationStatus.suggested,
+    status: RelationshipStatus.suggested,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -62,7 +63,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Contact Local Police', 'Outreach', 'Safety Personnel', 'Legal Counsel'],
 
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -74,7 +75,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: ['Sound Equipment', 'Safety Training'],
   },
@@ -87,7 +88,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: ['Contact Local Police', 'Outreach'],
   },
@@ -100,7 +101,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -113,7 +114,7 @@ const organizations: Array<Organization> = [
     county: 'HENNEPIN',
     type: 'Advocacy',
     resourcesOffered: ['Provide Funding', 'Outreach', 'Sound Equipment', 'Safety Training', 'Safety Personnel', 'Legal Counsel'],
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -126,7 +127,7 @@ const organizations: Array<Organization> = [
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
     resourcesOffered: ['Contact Local Police', 'Sound Equipment', 'Legal Counsel'],
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -138,7 +139,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -150,7 +151,7 @@ const organizations: Array<Organization> = [
     city: 'CANTON',
     county: 'WAYNE',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -162,7 +163,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -174,7 +175,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -186,7 +187,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -198,7 +199,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -210,7 +211,7 @@ const organizations: Array<Organization> = [
     city: 'BROOKLYN',
     county: 'BROOKLYN',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -222,7 +223,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -234,7 +235,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -246,7 +247,7 @@ const organizations: Array<Organization> = [
     city: 'ARLINGTON',
     county: 'TARRANT',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -258,7 +259,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: ['Outreach', 'Safety Training', 'Safety Personnel'],
   },
@@ -271,7 +272,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -283,7 +284,7 @@ const organizations: Array<Organization> = [
     city: 'PASADENA',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -295,7 +296,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -307,7 +308,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -319,7 +320,7 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -331,7 +332,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -343,7 +344,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -355,7 +356,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -367,7 +368,7 @@ const organizations: Array<Organization> = [
     city: 'PLANO',
     county: 'COLLIN',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -379,7 +380,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -391,7 +392,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -403,7 +404,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -415,7 +416,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -427,7 +428,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -439,7 +440,7 @@ const organizations: Array<Organization> = [
     city: 'SAN MATEO',
     county: 'SAN MATEO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -453,7 +454,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Contact Local Police', 'Safety Training', 'Safety Personnel'],
 
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -465,7 +466,7 @@ const organizations: Array<Organization> = [
     city: 'TUCSON',
     county: 'PIMA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -477,7 +478,7 @@ const organizations: Array<Organization> = [
     city: 'TAKOMA PARK',
     county: 'MONTGOMERY',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -491,7 +492,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Sound Equipment', 'Safety Personnel'],
 
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -503,7 +504,7 @@ const organizations: Array<Organization> = [
     city: 'ALAMEDA',
     county: 'ALAMEDA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -515,7 +516,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -528,7 +529,7 @@ const organizations: Array<Organization> = [
     county: 'NEW YORK',
     type: 'Advocacy',
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Legal Counsel'],
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -540,7 +541,7 @@ const organizations: Array<Organization> = [
     city: 'BURBANK',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     resourcesOffered: ['Contact Local Police', 'Outreach', 'Sound Equipment', 'Safety Personnel'],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
@@ -553,7 +554,7 @@ const organizations: Array<Organization> = [
     city: 'HONOLULU',
     county: 'HONOLULU',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -565,7 +566,7 @@ const organizations: Array<Organization> = [
     city: 'LIVINGSTON',
     county: 'ESSEX',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -577,7 +578,7 @@ const organizations: Array<Organization> = [
     city: 'WESTLAND',
     county: 'WAYNE',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -589,7 +590,7 @@ const organizations: Array<Organization> = [
     city: '',
     county: '',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -601,7 +602,7 @@ const organizations: Array<Organization> = [
     city: 'CLARKSVILLE',
     county: 'HOWARD',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -613,7 +614,7 @@ const organizations: Array<Organization> = [
     city: 'CUPERTINO',
     county: 'SANTA CLARA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -625,7 +626,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     resourcesOffered: ['Provide Funding', 'Outreach', 'Sound Equipment', 'Legal Counsel'],
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -639,7 +640,7 @@ const organizations: Array<Organization> = [
     city: 'DES MOINES',
     county: 'POLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -651,7 +652,7 @@ const organizations: Array<Organization> = [
     city: 'CANTON',
     county: 'NORFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -663,7 +664,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -675,7 +676,7 @@ const organizations: Array<Organization> = [
     city: 'INDIANAPOLIS',
     county: 'MARION',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -688,7 +689,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Safety Training'],
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -700,7 +701,7 @@ const organizations: Array<Organization> = [
     city: 'CLARK',
     county: 'UNION',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -712,7 +713,7 @@ const organizations: Array<Organization> = [
     city: 'CARMEL',
     county: 'HAMILTON',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -724,7 +725,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -736,7 +737,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -748,7 +749,7 @@ const organizations: Array<Organization> = [
     city: 'SAN DIEGO',
     county: 'SAN DIEGO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -760,7 +761,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -772,7 +773,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -785,7 +786,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Contact Local Police', 'Sound Equipment', 'Legal Counsel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -798,7 +799,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Outreach', 'Safety Personnel', 'Legal Counsel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -810,7 +811,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -822,7 +823,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -834,7 +835,7 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -846,7 +847,7 @@ const organizations: Array<Organization> = [
     city: 'SAN BERNARDINO',
     county: 'SAN BERNARDINO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -858,7 +859,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Advocacy',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -871,7 +872,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Contact Local Police', 'Outreach', 'Safety Training'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -883,7 +884,7 @@ const organizations: Array<Organization> = [
     city: 'DALLAS',
     county: 'DALLAS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -895,7 +896,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -907,7 +908,7 @@ const organizations: Array<Organization> = [
     city: 'DENVER',
     county: 'DENVER',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -919,7 +920,7 @@ const organizations: Array<Organization> = [
     city: 'ROCKVILLE',
     county: 'MONTGOMERY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -931,7 +932,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -943,7 +944,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -955,7 +956,7 @@ const organizations: Array<Organization> = [
     city: 'AURORA',
     county: 'ARAPAHOE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -967,7 +968,7 @@ const organizations: Array<Organization> = [
     city: 'SILVER SPRING',
     county: 'MONTGOMERY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -979,7 +980,7 @@ const organizations: Array<Organization> = [
     city: 'ALBUQUERQUE',
     county: 'BERNALILLO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -991,7 +992,7 @@ const organizations: Array<Organization> = [
     city: 'GARDEN GROVE',
     county: 'ORANGE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1003,7 +1004,7 @@ const organizations: Array<Organization> = [
     city: 'SAN DIEGO',
     county: 'SAN DIEGO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1015,7 +1016,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1027,7 +1028,7 @@ const organizations: Array<Organization> = [
     city: 'GERMANTOWN',
     county: 'MONTGOMERY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1041,7 +1042,7 @@ const organizations: Array<Organization> = [
     type: 'CSO',
     resourcesOffered: ['Outreach'],
 
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1055,7 +1056,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Provide Funding'],
 
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1067,7 +1068,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1079,7 +1080,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1091,7 +1092,7 @@ const organizations: Array<Organization> = [
     city: 'LINCOLN',
     county: 'LANCASTER',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1103,7 +1104,7 @@ const organizations: Array<Organization> = [
     city: 'GRAND RAPIDS',
     county: 'KENT',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1115,7 +1116,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1127,7 +1128,7 @@ const organizations: Array<Organization> = [
     city: 'DALY CITY',
     county: 'SAN MATEO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1140,7 +1141,7 @@ const organizations: Array<Organization> = [
     county: 'NEW YORK',
     type: 'CSO',
     resourcesOffered: ['Contact Local Police', 'Safety Training'],
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1152,7 +1153,7 @@ const organizations: Array<Organization> = [
     city: 'QUINCY',
     county: 'NORFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1164,7 +1165,7 @@ const organizations: Array<Organization> = [
     city: 'SALT LAKE CITY',
     county: 'SALT LAKE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1177,7 +1178,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Safety Training'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1189,7 +1190,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1203,7 +1204,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Provide Funding', 'Safety Personnel'],
 
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1215,7 +1216,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1227,7 +1228,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1239,7 +1240,7 @@ const organizations: Array<Organization> = [
     city: 'HOUSTON',
     county: 'HARRIS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1252,7 +1253,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Contact Local Police', 'Outreach'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1264,7 +1265,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1276,7 +1277,7 @@ const organizations: Array<Organization> = [
     city: 'TEANECK',
     county: 'BERGEN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1290,7 +1291,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Outreach', 'Safety Training', 'Safety Personnel'],
 
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1302,7 +1303,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1314,7 +1315,7 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1326,7 +1327,7 @@ const organizations: Array<Organization> = [
     city: 'COLUMBUS',
     county: 'FRANKLIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1338,7 +1339,7 @@ const organizations: Array<Organization> = [
     city: 'HARTFORD',
     county: 'HARTFORD',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1350,7 +1351,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1362,7 +1363,7 @@ const organizations: Array<Organization> = [
     city: 'ROSEVILLE',
     county: 'RAMSEY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1374,7 +1375,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1386,7 +1387,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1398,7 +1399,7 @@ const organizations: Array<Organization> = [
     city: 'MONTANA',
     county: 'MISSOULA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1410,7 +1411,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1422,7 +1423,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1434,7 +1435,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1446,7 +1447,7 @@ const organizations: Array<Organization> = [
     city: 'SPRINGFIELD',
     county: 'SANGAMON',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1459,7 +1460,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Legal Counsel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1471,7 +1472,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1483,7 +1484,7 @@ const organizations: Array<Organization> = [
     city: 'ALAMEDA',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1495,7 +1496,7 @@ const organizations: Array<Organization> = [
     city: 'HONOLULU',
     county: 'HONOLULU',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1507,7 +1508,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1520,7 +1521,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Provide Funding', 'Legal Counsel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1533,7 +1534,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Safety Training', 'Legal Counsel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1545,7 +1546,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1557,7 +1558,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1569,7 +1570,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1582,7 +1583,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Contact Local Police', 'Outreach', 'Sound Equipment', 'Safety Personnel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1594,7 +1595,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1606,7 +1607,7 @@ const organizations: Array<Organization> = [
     city: 'BEACHWOOD',
     county: 'CUYAHOGA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1618,7 +1619,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1630,7 +1631,7 @@ const organizations: Array<Organization> = [
     city: 'PITTSBURGH',
     county: 'ALLEGHENY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1642,7 +1643,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1654,7 +1655,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1666,7 +1667,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1678,7 +1679,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1690,7 +1691,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1702,7 +1703,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1714,7 +1715,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1726,7 +1727,7 @@ const organizations: Array<Organization> = [
     city: 'MADISON',
     county: 'DANE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1739,7 +1740,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Sound Equipment'],
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1751,7 +1752,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1763,7 +1764,7 @@ const organizations: Array<Organization> = [
     city: 'PHOENIX',
     county: 'MARICOPA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1776,7 +1777,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Provide Funding', 'Safety Personnel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1788,7 +1789,7 @@ const organizations: Array<Organization> = [
     city: 'BEL AIR',
     county: 'HARFORD',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1801,7 +1802,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Outreach', 'Safety Training', 'Legal Counsel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1814,7 +1815,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Contact Local Police', 'Sound Equipment', 'Safety Personnel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1826,7 +1827,7 @@ const organizations: Array<Organization> = [
     city: 'LAS VEGAS',
     county: 'CLARK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1838,7 +1839,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1850,7 +1851,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1862,7 +1863,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1874,7 +1875,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1886,7 +1887,7 @@ const organizations: Array<Organization> = [
     city: 'CUDAHY',
     county: 'MILWAUKEE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1898,7 +1899,7 @@ const organizations: Array<Organization> = [
     city: 'DULUTH',
     county: 'GWINNETT',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1910,7 +1911,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1922,7 +1923,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1934,7 +1935,7 @@ const organizations: Array<Organization> = [
     city: 'STOCKTON',
     county: 'SAN JOAQUIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1946,7 +1947,7 @@ const organizations: Array<Organization> = [
     city: 'STOCKTON',
     county: 'SAN JOAQUIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1958,7 +1959,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1970,7 +1971,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1983,7 +1984,7 @@ const organizations: Array<Organization> = [
     county: 'NEW YORK',
     type: 'CSO',
     resourcesOffered: ['Outreach'],
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -1995,7 +1996,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2007,7 +2008,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2019,7 +2020,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2031,7 +2032,7 @@ const organizations: Array<Organization> = [
     city: 'ATLANTA',
     county: 'FULTON',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2043,7 +2044,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2055,7 +2056,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2067,7 +2068,7 @@ const organizations: Array<Organization> = [
     city: 'LAWRENCE',
     county: 'ESSEX',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2079,7 +2080,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2091,7 +2092,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2103,7 +2104,7 @@ const organizations: Array<Organization> = [
     city: 'COLUMBUS',
     county: 'FRANKLIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2115,7 +2116,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2127,7 +2128,7 @@ const organizations: Array<Organization> = [
     city: 'WORCESTER',
     county: 'WORCESTER',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2139,7 +2140,7 @@ const organizations: Array<Organization> = [
     city: 'SAN DIEGO',
     county: 'SAN DIEGO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2151,7 +2152,7 @@ const organizations: Array<Organization> = [
     city: 'DES MOINES',
     county: 'POLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2163,7 +2164,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2175,7 +2176,7 @@ const organizations: Array<Organization> = [
     city: 'ELLICOTT CITY',
     county: 'HOWARD',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2187,7 +2188,7 @@ const organizations: Array<Organization> = [
     city: 'ELMHURST',
     county: 'QUEENS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2199,7 +2200,7 @@ const organizations: Array<Organization> = [
     city: 'QUINCY',
     county: 'NORFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2211,7 +2212,7 @@ const organizations: Array<Organization> = [
     city: 'LAS VEGAS',
     county: 'CLARK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2223,7 +2224,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2235,7 +2236,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2247,7 +2248,7 @@ const organizations: Array<Organization> = [
     city: 'INDIANAPOLIS',
     county: 'MARION',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2259,7 +2260,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2271,7 +2272,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2283,7 +2284,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2295,7 +2296,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2307,7 +2308,7 @@ const organizations: Array<Organization> = [
     city: 'FALLS CHURCH',
     county: 'FAIRFAX',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2319,7 +2320,7 @@ const organizations: Array<Organization> = [
     city: 'WOODBRIDGE',
     county: 'MIDDLESEX',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2331,7 +2332,7 @@ const organizations: Array<Organization> = [
     city: 'NORTH MIAMI',
     county: 'MIAMI-DADE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2343,7 +2344,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2355,7 +2356,7 @@ const organizations: Array<Organization> = [
     city: 'RIDGEWOOD',
     county: 'QUEENS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2368,7 +2369,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Personnel'],
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2381,7 +2382,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Provide Funding', 'Contact Local Police'],
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2393,7 +2394,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2406,7 +2407,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2418,7 +2419,7 @@ const organizations: Array<Organization> = [
     city: 'HOUSTON',
     county: 'HARRIS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2430,7 +2431,7 @@ const organizations: Array<Organization> = [
     city: 'WHITTIER',
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2443,7 +2444,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Safety Training', 'Legal Counsel'],
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2455,7 +2456,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2467,7 +2468,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2479,7 +2480,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2491,7 +2492,7 @@ const organizations: Array<Organization> = [
     city: 'AKRON',
     county: 'SUMMIT',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2503,7 +2504,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2515,7 +2516,7 @@ const organizations: Array<Organization> = [
     city: 'GARDEN GROVE',
     county: 'ORANGE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2527,7 +2528,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2539,7 +2540,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2551,7 +2552,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2563,7 +2564,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2575,7 +2576,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2587,7 +2588,7 @@ const organizations: Array<Organization> = [
     city: 'MASON',
     county: 'WARREN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2599,7 +2600,7 @@ const organizations: Array<Organization> = [
     city: 'MERCER ISLAND',
     county: 'KING',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2611,7 +2612,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2623,7 +2624,7 @@ const organizations: Array<Organization> = [
     city: 'SOMERVILLE',
     county: 'MIDDLESEX',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2635,7 +2636,7 @@ const organizations: Array<Organization> = [
     city: 'SANTA ANA',
     county: 'ORANGE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2647,7 +2648,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2659,7 +2660,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2671,7 +2672,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2683,7 +2684,7 @@ const organizations: Array<Organization> = [
     city: 'LAKEWOOD',
     county: 'PIERCE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2695,7 +2696,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2707,7 +2708,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2719,7 +2720,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2731,7 +2732,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2743,7 +2744,7 @@ const organizations: Array<Organization> = [
     city: 'POTOMAC',
     county: 'MONTGOMERY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2755,7 +2756,7 @@ const organizations: Array<Organization> = [
     city: 'HOUSTON',
     county: 'HARRIS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2767,7 +2768,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2779,7 +2780,7 @@ const organizations: Array<Organization> = [
     city: 'HOUSTON',
     county: 'HOUSTON',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2793,7 +2794,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Provide Funding', 'Legal Counsel'],
 
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2805,7 +2806,7 @@ const organizations: Array<Organization> = [
     city: 'ALPHARETTA',
     county: 'FULTON',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2817,7 +2818,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2829,7 +2830,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2841,7 +2842,7 @@ const organizations: Array<Organization> = [
     city: 'GRAND RAPIDS',
     county: 'KENT',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2853,7 +2854,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2865,7 +2866,7 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2877,7 +2878,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2889,7 +2890,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2901,7 +2902,7 @@ const organizations: Array<Organization> = [
     city: 'HONOLULU',
     county: 'HONOLULU',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2913,7 +2914,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2925,7 +2926,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2937,7 +2938,7 @@ const organizations: Array<Organization> = [
     city: 'SANTA CLARA',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2949,7 +2950,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2961,7 +2962,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2973,7 +2974,7 @@ const organizations: Array<Organization> = [
     city: 'WOODSIDE',
     county: 'QUEENS',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2985,7 +2986,7 @@ const organizations: Array<Organization> = [
     city: 'ROCKVILLE',
     county: 'MONTGOMERY',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -2997,7 +2998,7 @@ const organizations: Array<Organization> = [
     city: 'SUNNYVALE',
     county: 'SANTA CLARA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3009,7 +3010,7 @@ const organizations: Array<Organization> = [
     city: 'BOCA RATON',
     county: 'PALM BEACH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3021,7 +3022,7 @@ const organizations: Array<Organization> = [
     city: 'FREMONT',
     county: 'ALAMEDA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3033,7 +3034,7 @@ const organizations: Array<Organization> = [
     city: 'AUSTIN',
     county: 'AUSTIN',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3045,7 +3046,7 @@ const organizations: Array<Organization> = [
     city: 'MORRISVILLE',
     county: 'WAKE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3057,7 +3058,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3069,7 +3070,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3081,7 +3082,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3093,7 +3094,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3105,7 +3106,7 @@ const organizations: Array<Organization> = [
     city: 'RIVERSIDE',
     county: 'RIVERSIDE',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3117,7 +3118,7 @@ const organizations: Array<Organization> = [
     city: 'SAN DIEGO',
     county: 'SAN DIEGO',
     type: 'CSO',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3129,7 +3130,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3141,7 +3142,7 @@ const organizations: Array<Organization> = [
     city: 'SAN LEANDRO',
     county: 'ALAMEDA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3153,7 +3154,7 @@ const organizations: Array<Organization> = [
     city: 'LAS VEGAS',
     county: 'CLARK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3165,7 +3166,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3177,7 +3178,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3189,7 +3190,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3202,7 +3203,7 @@ const organizations: Array<Organization> = [
     county: 'NEW YORK',
     resourcesOffered: ['Contact Local Police', 'Outreach', 'Safety Training', 'Safety Personnel'],
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3214,7 +3215,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3226,7 +3227,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3238,7 +3239,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3250,7 +3251,7 @@ const organizations: Array<Organization> = [
     city: 'ARTESIA',
     county: 'LOS ANGELES',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3262,7 +3263,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3274,7 +3275,7 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3286,7 +3287,7 @@ const organizations: Array<Organization> = [
     city: 'DAYTON',
     county: 'MONTGOMERY',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3298,7 +3299,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3310,7 +3311,7 @@ const organizations: Array<Organization> = [
     city: 'PORTLAND',
     county: 'MULTNOMAH',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3322,7 +3323,7 @@ const organizations: Array<Organization> = [
     city: 'RANCHO PALOS VERDES',
     county: 'LOS ANGELES',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3334,7 +3335,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3346,7 +3347,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3358,7 +3359,7 @@ const organizations: Array<Organization> = [
     city: 'SEATTLE',
     county: 'KING',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3370,7 +3371,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3382,7 +3383,7 @@ const organizations: Array<Organization> = [
     city: 'WALNUT',
     county: 'LOS ANGELES',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3394,7 +3395,7 @@ const organizations: Array<Organization> = [
     city: 'ATLANTA',
     county: 'FULTON',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3406,7 +3407,7 @@ const organizations: Array<Organization> = [
     city: 'BOSTON',
     county: 'SUFFOLK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3418,7 +3419,7 @@ const organizations: Array<Organization> = [
     city: 'ST PAUL',
     county: 'RAMSEY',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3430,7 +3431,7 @@ const organizations: Array<Organization> = [
     city: 'CHANDLER',
     county: 'MARICOPA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3442,7 +3443,7 @@ const organizations: Array<Organization> = [
     city: 'PHILADELPHIA',
     county: 'PHILADELPHIA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3454,7 +3455,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3466,7 +3467,7 @@ const organizations: Array<Organization> = [
     city: 'BROOKLYN',
     county: 'KINGS',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3478,7 +3479,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3490,7 +3491,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3502,7 +3503,7 @@ const organizations: Array<Organization> = [
     city: 'NORCROSS',
     county: 'GWINNETT',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3514,7 +3515,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3528,7 +3529,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Personnel'],
 
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3540,7 +3541,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3552,7 +3553,7 @@ const organizations: Array<Organization> = [
     city: 'SAN JOSE',
     county: 'SANTA CLARA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3566,7 +3567,7 @@ const organizations: Array<Organization> = [
     type: 'Hybrid',
     resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Sound Equipment', 'Legal Counsel'],
 
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3578,7 +3579,7 @@ const organizations: Array<Organization> = [
     city: 'CHICAGO',
     county: 'COOK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3590,7 +3591,7 @@ const organizations: Array<Organization> = [
     city: 'COLUMBUS',
     county: 'FRANKLIN',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3602,7 +3603,7 @@ const organizations: Array<Organization> = [
     city: 'SACRAMENTO',
     county: 'SACRAMENTO',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3614,7 +3615,7 @@ const organizations: Array<Organization> = [
     city: 'OAKLAND',
     county: 'ALAMEDA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3626,7 +3627,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3637,7 +3638,7 @@ const organizations: Array<Organization> = [
     city: 'DORCHESTER',
     county: 'SUFFOLK',
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -3650,7 +3651,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Training'],
 
     type: 'Hybrid',
-    status: OrganizationStatus.noRelation,
+    status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
 ];
