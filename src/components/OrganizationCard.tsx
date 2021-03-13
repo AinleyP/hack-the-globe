@@ -13,10 +13,6 @@ interface DispatchProps {
 }
 
 
-// type Props = DispatchProps & {
-//   org: Organization
-// };
-
 const OrganizationCard = (props: Props): JSX.Element => {
   const renderActionButton = () => {
     switch (props.org.status) {
@@ -30,7 +26,7 @@ const OrganizationCard = (props: Props): JSX.Element => {
       case OrganizationStatus.suggested:
         return <button
           className="organization-card-button organization-card-connect-button"
-          onClick={() => { props.acceptRequestFromOrg(props.org) }}>
+          onClick={() => { props.sendRequestToOrg(props.org) }}>
           Connect
           </button>
         break;
