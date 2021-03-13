@@ -1,10 +1,11 @@
 /* Imports from packages */
 import { bindActionCreators, Dispatch } from "redux";
 import { connect } from "react-redux";
+import React from 'react';
 
-import { addOrg } from "../data/actions/organizationsActions";
-import Organization from "../data/types/organization";
-import { RootState } from "../data/reducers";
+import { addOrg } from '../data/actions/organizationsActions';
+import Organization from '../data/types/organization';
+import { RootState } from '../data/reducers';
 
 interface StateProps {
   organizations: Array<Organization>;
@@ -19,14 +20,14 @@ type Props = StateProps & DispatchProps;
 const SampleComponent = (props: Props): JSX.Element => {
   const onClick = () => {
     props.addOrg({
-      id: "4",
-      name: "Asian American Legal Foundation",
-      foundingYear: "2013",
-      address: "11 MALTA DR,SAN FRANCISCO , CA 94131",
-      state: "CA",
-      city: "SAN FRANCISCO",
-      county: "SAN FRANCISCO",
-      type: "Advocacy",
+      id: '4',
+      name: 'Asian American Legal Foundation',
+      foundingYear: '2013',
+      address: '11 MALTA DR,SAN FRANCISCO , CA 94131',
+      state: 'CA',
+      city: 'SAN FRANCISCO',
+      county: 'SAN FRANCISCO',
+      type: 'Advocacy',
     });
   };
   return (
@@ -42,6 +43,7 @@ const SampleComponent = (props: Props): JSX.Element => {
         Add Matched Org
       </button>
       <a href='/login'>Go to login</a>
+      <a href='/organizations/detail'>Go to org detail</a>
     </div>
   );
 };
