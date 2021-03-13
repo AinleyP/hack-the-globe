@@ -17,7 +17,16 @@ function App(): JSX.Element {
         <Route path='/suggestions'><SuggestionsPage /></Route>
         <Route path='/events'><Navbar /></Route>
         <Route path='/settings'><Navbar /></Route>
-        <Route path='/'><SuggestionsPage /></Route>
+        {/* <Route path='/'><OrganizationCard org={organizations[0]}  /></Route> */}
+        <Route path='/organizations/detail'>
+          <OrgProfile pageName='Org Profile' orgId={'1'} />
+        </Route>
+        <Route path='/login'>
+          <SamplePage pageName='login' />
+        </Route>
+        <Route path='/'>
+          <SamplePage pageName='home' />
+        </Route>
       </Switch>
     </Router>
   );
