@@ -26,6 +26,7 @@ $card-height: 200px;
     flex-direction: column;
     margin-left: 30px;
     margin-right: 40px;
+    width: 60%;
 
     & h1 {
       font-weight: bold;
@@ -39,7 +40,7 @@ $card-height: 200px;
   &-buttons-div {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 15%;
   }
 
   &-button {
@@ -78,8 +79,9 @@ $card-height: 200px;
     color: white;
     border-radius: 10px;
     padding: 6px 12px;
-    width: 170px;
-    margin-left: 50px;
+    width: 130px;
+    margin-left: 20px;
+    font-size: 12px;
   }
 
   &-title-section {

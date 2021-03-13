@@ -1,0 +1,61 @@
+$orgs-and-volunteers-list-left-padding: 50px;
+
+.orgs-and-volunteers-list {
+  &-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: $orgs-and-volunteers-list-left-padding;
+
+    border-bottom: $grey solid;
+  }
+
+  &-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & h3 {
+      @include normal-text;
+      font-size: 14px;
+      margin-right: 18px;
+      margin-bottom: 0;
+    }
+
+    & button {
+      background-color: $light-grey;
+
+    }
+
+    &-dropdown-btn {
+      @include normal-text;
+    }
+  }
+
+  &-tabs {
+    & button {
+      @include normal-text;
+      border: none;
+      background: none;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  &-tab {
+    margin-right: 50px;
+    &.active {
+      border-bottom: #ef7b58 solid;
+      border-bottom-width: 2;
+    }
+  }
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    padding-right: $orgs-and-volunteers-list-left-padding;
+  }
+  &-card {
+    margin-top: 20px;
+  }
+}

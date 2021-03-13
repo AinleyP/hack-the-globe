@@ -2,31 +2,26 @@
 import { bindActionCreators, Dispatch } from "redux";
 import { connect, ConnectedProps } from "react-redux";
 
-import { acceptRequestFromOrg, sendRequestToOrg } from '../data/actions/organizationsActions'
-import Organization from '../data/types/organization'
+import Volunteer from '../data/types/volunteer'
 import RelationshipStatus from '../data/types/relationshipStatus'
-import { RootState } from '../data/reducers'
 import Tags from './Tags'
 
-interface DispatchProps {
-  acceptRequestFromOrg: typeof acceptRequestFromOrg,
-  sendRequestToOrg: typeof sendRequestToOrg,
-}
 
-const OrganizationCard = (props: Props): JSX.Element => {
+
+interface Props {
+  volunteer: Volunteer
+};
+
+const VolunteerCard = (props: Props): JSX.Element => {
   const renderActionButton = () => {
-    switch (props.org.status) {
+    switch (props.volunteer.status) {
       case RelationshipStatus.requested:
-        return <button
-          className="organization-card-button organization-card-accept-button"
-          onClick={() => { props.acceptRequestFromOrg(props.org) }}>
+        return <button className="organization-card-button organization-card-accept-button">
           Accept
           </button>
         break;
       case RelationshipStatus.suggested:
-        return <button
-          className="organization-card-button organization-card-connect-button"
-          onClick={() => { props.acceptRequestFromOrg(props.org) }}>
+        return <button className="organization-card-button organization-card-connect-button">
           Connect
           </button>
         break;
@@ -51,21 +46,21 @@ const OrganizationCard = (props: Props): JSX.Element => {
   }
 
   const renderRequestIndicator = () => {
-    if (props.org.status === RelationshipStatus.requested) {
+    if (props.volunteer.status === RelationshipStatus.requested) {
       return <div className="organization-card-request-indicator">Connected with you</div>
 
     }
   }
 
   return <div className="organization-card">
-    <img src={props.org.image} />
+    <img src={props.volunteer.image} />
     <div className="organization-card-text">
       <div className="organization-card-title-section">
-        <h1>{props.org.name}</h1>
+        <h1>{props.volunteer.name}</h1>
         {renderRequestIndicator()}
       </div>
-      <p>{props.org.bio ? `${props.org.bio.substring(0, 200)}...` : ""}</p>
-      <Tags tags={props.org.resourcesOffered ? props.org.resourcesOffered : []} />
+      <p>{props.volunteer.bio ? `${props.volunteer.bio.substring(0, 300)}...` : ""}</p>
+      <Tags tags={props.volunteer.resourcesOffered ? props.volunteer.resourcesOffered : []} />
     </div>
     <div className="organization-card-buttons-div">
       <button className="organization-card-view-details-button organization-card-button">View Details</button>
@@ -73,21 +68,6 @@ const OrganizationCard = (props: Props): JSX.Element => {
     </div>
   </div>;
 };
-const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
-  return bindActionCreators(
-    {
-      // add other actions here
-      acceptRequestFromOrg,
-      sendRequestToOrg
-    },
-    dispatch
-  );
-};
 
-const connector = connect(null, mapDispatchToProps);
+export default VolunteerCard;
 
-type Props = ConnectedProps<typeof connector> & {
-  org: Organization
-};;
-
-export default connector(OrganizationCard);
