@@ -66,8 +66,21 @@ const organizationReducer = (state = defaultState, action: OrganizationsAction):
         ...state,
         data: stateCopy.data
           .map((org: Organization) => {
-            let score = org.city === action.payload.location ? 100 : 0;
+            let score = 0;
 
+            if (org.city === action.payload.location) {
+              score += 100;
+
+              if ((org.status = RelationshipStatus.noRelation)) {
+                // if in same city, change noRelation to suggested
+                org.status = RelationshipStatus.suggested;
+              }
+            } else if ((org.status = RelationshipStatus.suggested)) {
+              // if not in same city, change suggested to noRelation
+              org.status = RelationshipStatus.noRelation;
+            }
+
+            // 100 * (num of fulfilled resources / num of required resources) - num of resources offered
             score +=
               org.resourcesOffered && action.payload.resourcesRequired
                 ? (100 * action.payload.resourcesRequired.filter((resource: Resource) => org.resourcesOffered?.includes(resource)).length) /
@@ -78,7 +91,7 @@ const organizationReducer = (state = defaultState, action: OrganizationsAction):
             org.compatibilityScore = score;
             return org;
           })
-          .sort((a, b) => b.compatibilityScore - a.compatibilityScore),
+          .sort((a, b) => b.compatibilityScore - a.compatibilityScore), // sort all orgs in desc order of compatibilityScore
       };
     default:
       return state;
