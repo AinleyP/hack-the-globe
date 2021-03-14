@@ -14,3 +14,5 @@ export const CLEAR_RESPONSIBILITIES = 'clear_responsibilities';
 
 export const ACCEPT_REQUEST_FROM_ORG = 'accept_request_from_org';
 export const SEND_REQUEST_TO_ORG = 'send_request_to_org';
+
+export const EDIT_EVENT = 'edit_event';

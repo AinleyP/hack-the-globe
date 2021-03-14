@@ -89,6 +89,7 @@ const OrganizationCard = (props: Props): JSX.Element => {
       </div>
     </div>
   );
+
 };
 const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
   return bindActionCreators(
@@ -104,7 +105,7 @@ const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
 const connector = connect(null, mapDispatchToProps);
 
 type Props = ConnectedProps<typeof connector> & {
-  org: Organization;
+  org: Organization,
 };
 
 export default connector(OrganizationCard);

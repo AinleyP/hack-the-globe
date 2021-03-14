@@ -9,7 +9,7 @@ import VolunteerCard from './VolunteerCard'
 
 interface Props {
   organizations: Array<Organization>,
-  volunteers: Array<Volunteer>
+  volunteers: Array<Volunteer>,
 }
 
 const OrganizationAndVolunteerList = (props: Props): JSX.Element => {

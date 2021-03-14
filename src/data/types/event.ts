@@ -7,4 +7,5 @@ export default interface Event {
   location: string;
   responsiblities: Array<Responsiblity>;
   description: string;
+  supportingTags?: Array<string>;
 }

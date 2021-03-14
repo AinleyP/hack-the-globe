@@ -1,13 +1,12 @@
 /* Imports from packages */
 import { connect } from "react-redux";
+import { useState } from 'react';
 
 import Organization from "../data/types/organization";
-import Activist from "../data/types/activist";
 import RelationshipStatus from "../data/types/relationshipStatus";
 import { RootState } from "../data/reducers";
 import Layout from '../components/Layout';
 import Banner from '../assets/banner.svg'
-import ActivistProfileEventList from '../components/ActivistProfileEventList';
 import OrganizationAndVolunteerList from '../components/OrganizationAndVolunteerList'
 
 interface StateProps {
@@ -26,9 +25,9 @@ const MatchesPage = (props: Props): JSX.Element => {
         <div className="matches-page-content">
           <h1 className="matches-page-header">Matches</h1>
           <div className="matches-page-organization-list">
-            <OrganizationAndVolunteerList 
-            organizations={props.organizations ? props.organizations.filter((org: Organization) => org.status === RelationshipStatus.pending || org.status === RelationshipStatus.matched) : []} 
-            volunteers={[]} />
+            <OrganizationAndVolunteerList
+              organizations={props.organizations ? props.organizations.filter((org: Organization) => org.status === RelationshipStatus.pending || org.status === RelationshipStatus.matched) : []}
+              volunteers={[]} />
           </div>
         </div>
       </div>

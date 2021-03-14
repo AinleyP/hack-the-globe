@@ -1,0 +1,130 @@
+.event-modal {
+  @include normal-text();
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1000px;
+  position: fixed;
+  z-index: 99 !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  border-radius: 10px;
+
+  padding-bottom: 30px;
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 40px;
+
+    & img {
+      border-radius: 10px;
+      padding-right: 16px;
+      width: 405px;
+      height: 293px;
+      padding: 0;
+    }
+  }
+
+  & h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  & h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  & h3 {
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+
+  &-buttons-div {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+
+  &-button {
+    font-size: 18px;
+    color: white;
+    border: none;
+    height: 44px;
+    border-radius: 3px;
+  }
+
+  &-title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    &.header-text {
+      margin-left: 36px;
+    }
+  }
+
+
+  &-close-icon {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 20px;
+    & img {
+      float: right;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-supporting-tags {
+    margin-bottom: 30px;
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  &-resources-required{
+    display: flex;
+    flex-direction: row;
+    & button {
+      margin-left: 20px;
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 98;
+  background-color: black;
+  opacity: 40%;
+}

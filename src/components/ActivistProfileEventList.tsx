@@ -12,6 +12,11 @@ interface DispatchProps {
 }
 
 const ActivistProfileEventList = (props: Props): JSX.Element => {
+  const onClickEvent = (event: Event) => {
+    props.setModalVisibility(true)
+    props.setSelectedEvent(event)
+  }
+
   const renderEventCards = () => {
     return props.events.map((event: Event) => (
       <button
@@ -26,7 +31,7 @@ const ActivistProfileEventList = (props: Props): JSX.Element => {
           );
         }}
       >
-        <ActivistProfileEventCard event={event} />
+        <ActivistProfileEventCard event={event} onClick={onClickEvent}/>
       </button>
     ));
   };
@@ -53,7 +58,9 @@ const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
 const connector = connect(null, mapDispatchToProps);
 
 type Props = ConnectedProps<typeof connector> & {
-  events: Array<Event>;
+  events: Array<Event>,
+  setModalVisibility: (isOpen: boolean) => void,
+  setSelectedEvent: (event: Event) => void
 };
 
 export default connector(ActivistProfileEventList);
