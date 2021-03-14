@@ -9,10 +9,7 @@ $card-height: 200px;
   height: $card-height;
   padding-right: 24px;
 
-  border-style: solid;
-  border-color: $light-grey;
-  border-radius: 5px;
-  border-width: 1px;
+  @include card-border;
 
   & img {
     border-radius: 5px;
