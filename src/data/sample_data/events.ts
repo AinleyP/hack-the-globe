@@ -31,7 +31,7 @@ const events: Array<Event> = [
     location: 'NEW YORK',
     responsiblities: [
       {
-        name: Resource.funding,
+        name: Resource.training,
         status: 'unfilled',
       },
       {
@@ -54,10 +54,6 @@ const events: Array<Event> = [
     responsiblities: [
       {
         name: Resource.sound,
-        status: 'filled',
-      },
-      {
-        name: Resource.training,
         status: 'filled',
       },
       {
