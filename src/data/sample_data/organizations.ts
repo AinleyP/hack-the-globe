@@ -1,6 +1,6 @@
 // dataset available at: https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/FLUPBJ/I1XEOW&version=6.0
-import Organization from "../types/organization";
-import RelationshipStatus from '../types/relationshipStatus'
+import Organization from '../types/organization';
+import RelationshipStatus from '../types/relationshipStatus';
 import {Resource} from '../types/responsiblity'
 
 const organizations: Array<Organization> = [
@@ -38,18 +38,18 @@ const organizations: Array<Organization> = [
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
     status: RelationshipStatus.suggested,
-    resourcesOffered: [Resource.training, Resource.outreach, Resource.sound],
-    image: "https://source.unsplash.com/Ch_QF4IocbU/150x150"
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.training, Resource.personnel, Resource.legal],
+    image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
-    id: "3",
-    name: "Asian Americans United",
-    foundingYear: "1985",
-    address: "1023 Callowhill Street, Philadelphia, PA 19123",
-    state: "PA",
-    city: "PHILADELPHIA",
-    county: "PHILADELPHIA",
-    type: "Advocacy",
+    id: '3',
+    name: 'Asian Americans United',
+    foundingYear: '1985',
+    address: '1023 Callowhill Street, Philadelphia, PA 19123',
+    state: 'PA',
+    city: 'PHILADELPHIA',
+    county: 'PHILADELPHIA',
+    type: 'Advocacy',
     status: RelationshipStatus.suggested,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
