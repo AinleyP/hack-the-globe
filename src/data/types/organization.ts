@@ -10,7 +10,7 @@ export default interface Organization {
   city: string;
   county: string;
   type: string;
-  status: RelationshipStatus;
+  status?: RelationshipStatus;
   image: string;
 
   bio?: string;
