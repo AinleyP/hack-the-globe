@@ -1,11 +1,12 @@
-/* Imports from packages */
-import { bindActionCreators, Dispatch } from 'redux';
-import { connect } from 'react-redux';
 
-import { addOrg } from '../data/actions/organizationsActions';
-import Organization from '../data/types/organization';
-import RelationshipStatus from '../data/types/relationshipStatus';
-import { RootState } from '../data/reducers';
+/* Imports from packages */
+import { bindActionCreators, Dispatch } from "redux";
+import { connect } from "react-redux";
+
+import { addOrg } from "../data/actions/organizationsActions";
+import Organization from "../data/types/organization";
+import RelationshipStatus from '../data/types/relationshipStatus'
+import { RootState } from "../data/reducers";
 
 interface StateProps {
   organizations: Array<Organization>;
@@ -20,26 +21,31 @@ type Props = StateProps & DispatchProps;
 const SampleComponent = (props: Props): JSX.Element => {
   const onClick = () => {
     props.addOrg({
-      id: '4',
-      name: 'Asian American Legal Foundation',
-      foundingYear: '2013',
-      address: '11 MALTA DR,SAN FRANCISCO , CA 94131',
-      state: 'CA',
-      city: 'SAN FRANCISCO',
-      county: 'SAN FRANCISCO',
-      type: 'Advocacy',
+      id: "4",
+      name: "Asian American Legal Foundation",
+      foundingYear: "2013",
+      address: "11 MALTA DR,SAN FRANCISCO , CA 94131",
+      state: "CA",
+      city: "SAN FRANCISCO",
+      county: "SAN FRANCISCO",
+      type: "Advocacy",
       status: RelationshipStatus.noRelation,
-      image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
-      compatibilityScore: 0,
+      image: "https://source.unsplash.com/Ch_QF4IocbU/150x150"
     });
   };
   return (
-    <div className="sample-component">
-      <p className="sample-component-text">{JSON.stringify(props.organizations)}</p>
-      <button type="button" className="btn btn-outline-primary" onClick={onClick}>
+    <div className='sample-component'>
+      <p className='sample-component-text'>
+        {JSON.stringify(props.organizations)}
+      </p>
+      <button
+        type='button'
+        className='btn btn-outline-primary'
+        onClick={onClick}
+      >
         Add Matched Org
       </button>
-      <a href="/login">Go to login</a>
+      <a href='/login'>Go to login</a>
     </div>
   );
 };
@@ -60,7 +66,12 @@ const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
   );
 };
 
-export default connect<StateProps, DispatchProps, Record<string, unknown>, RootState>(
+export default connect<
+  StateProps,
+  DispatchProps,
+  Record<string, unknown>,
+  RootState
+>(
   mapStateToProps,
   mapDispatchToProps
 )(SampleComponent);
