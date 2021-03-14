@@ -2,8 +2,6 @@
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
 import { useState } from 'react';
-import { bindActionCreators, Dispatch } from 'redux';
-import { connect, ConnectedProps } from 'react-redux';
 
 import { editEvent } from '../data/actions/activistActions';
 import Event from '../data/types/event';
