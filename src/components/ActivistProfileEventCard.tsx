@@ -7,7 +7,7 @@ interface Props {
   event: Event
 }
 
-const ProfileEventCard = (props: Props): JSX.Element => {
+const ActivistProfileEventCard = (props: Props): JSX.Element => {
   return <div className="profile-event-card">
     <img src={props.event.image} />
     <div className="profile-event-card-text">
@@ -18,4 +18,4 @@ const ProfileEventCard = (props: Props): JSX.Element => {
   </div>;
 };
 
-export default ProfileEventCard
+export default ActivistProfileEventCard
