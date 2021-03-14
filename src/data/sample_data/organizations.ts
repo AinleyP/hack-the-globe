@@ -61,7 +61,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
-    resourcesOffered: ['Contact Local Police', 'Outreach', 'Safety Personnel', 'Legal Counsel'],
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.personnel, Resource.legal],
 
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
@@ -78,7 +78,7 @@ const organizations: Array<Organization> = [
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
-    resourcesOffered: ['Sound Equipment', 'Safety Training'],
+    resourcesOffered: [Resource.sound, Resource.training],
   },
   {
     id: '6',
@@ -91,7 +91,7 @@ const organizations: Array<Organization> = [
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
-    resourcesOffered: ['Contact Local Police', 'Outreach'],
+    resourcesOffered: [Resource.police, Resource.outreach],
   },
   {
     id: '7',
@@ -115,7 +115,7 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'Advocacy',
-    resourcesOffered: ['Provide Funding', 'Outreach', 'Sound Equipment', 'Safety Training', 'Safety Personnel', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.training, Resource.personnel, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -129,7 +129,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    resourcesOffered: ['Contact Local Police', 'Sound Equipment', 'Legal Counsel'],
+    resourcesOffered: [Resource.police, Resource.sound, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -276,7 +276,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
-    resourcesOffered: ['Outreach', 'Safety Training', 'Safety Personnel'],
+    resourcesOffered: [Resource.outreach, Resource.training, Resource.personnel],
   },
   {
     id: '21',
@@ -481,7 +481,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'NEW YORK',
-    resourcesOffered: ['Contact Local Police', 'Safety Training', 'Safety Personnel'],
+    resourcesOffered: [Resource.police, Resource.training, Resource.personnel],
 
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
@@ -522,7 +522,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'QUEENS',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Sound Equipment', 'Safety Personnel'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.outreach, Resource.sound, Resource.personnel],
 
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
@@ -564,7 +564,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'Advocacy',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -580,7 +580,7 @@ const organizations: Array<Organization> = [
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
 
-    resourcesOffered: ['Contact Local Police', 'Outreach', 'Sound Equipment', 'Safety Personnel'],
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.sound, Resource.personnel],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
   {
@@ -672,7 +672,7 @@ const organizations: Array<Organization> = [
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
 
-    resourcesOffered: ['Provide Funding', 'Outreach', 'Sound Equipment', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.legal],
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
   },
@@ -735,7 +735,7 @@ const organizations: Array<Organization> = [
     address: '100 Clary Ave, San Gabriel, CA 91776',
     state: 'CA',
     city: 'SAN GABRIEL',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Safety Training'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.outreach, Resource.training],
     county: 'LOS ANGELES',
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -841,7 +841,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Contact Local Police', 'Sound Equipment', 'Legal Counsel'],
+    resourcesOffered: [Resource.police, Resource.sound, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -855,7 +855,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Outreach', 'Safety Personnel', 'Legal Counsel'],
+    resourcesOffered: [Resource.outreach, Resource.personnel, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -934,7 +934,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Contact Local Police', 'Outreach', 'Safety Training'],
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.training],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1118,7 +1118,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    resourcesOffered: ['Outreach'],
+    resourcesOffered: [Resource.outreach],
 
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -1131,7 +1131,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'NEW YORK',
-    resourcesOffered: ['Provide Funding'],
+    resourcesOffered: [Resource.funding],
 
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -1225,7 +1225,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    resourcesOffered: ['Contact Local Police', 'Safety Training'],
+    resourcesOffered: [Resource.police, Resource.training],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -1264,7 +1264,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'ENCINO',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Safety Training'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.training],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1291,7 +1291,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'ARTESIA',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Provide Funding', 'Safety Personnel'],
+    resourcesOffered: [Resource.funding, Resource.personnel],
 
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -1345,7 +1345,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Contact Local Police', 'Outreach'],
+    resourcesOffered: [Resource.police, Resource.outreach],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1385,7 +1385,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Outreach', 'Safety Training', 'Safety Personnel'],
+    resourcesOffered: [Resource.outreach, Resource.training, Resource.personnel],
 
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -1569,7 +1569,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'MONTEREY PARK',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.outreach, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1635,7 +1635,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Provide Funding', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1649,7 +1649,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Safety Training', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.outreach, Resource.training, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1702,7 +1702,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'ALHAMBRA',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Contact Local Police', 'Outreach', 'Sound Equipment', 'Safety Personnel'],
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.sound, Resource.personnel],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1871,7 +1871,7 @@ const organizations: Array<Organization> = [
     address: '32 Broadway, 10th Floor New York, NY 10004',
     state: 'NY',
     city: 'NEW YORK',
-    resourcesOffered: ['Sound Equipment'],
+    resourcesOffered: [Resource.sound],
     county: 'NEW YORK',
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -1912,7 +1912,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Provide Funding', 'Safety Personnel'],
+    resourcesOffered: [Resource.funding, Resource.personnel],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1939,7 +1939,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Outreach', 'Safety Training', 'Legal Counsel'],
+    resourcesOffered: [Resource.outreach, Resource.training, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -1953,7 +1953,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Contact Local Police', 'Sound Equipment', 'Safety Personnel'],
+    resourcesOffered: [Resource.police, Resource.sound, Resource.personnel],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -2137,7 +2137,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
-    resourcesOffered: ['Outreach'],
+    resourcesOffered: [Resource.outreach],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2553,7 +2553,7 @@ const organizations: Array<Organization> = [
     state: 'CA',
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
-    resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Personnel'],
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.personnel],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
 
@@ -2566,7 +2566,7 @@ const organizations: Array<Organization> = [
     address: '6822 20th Avenue Brooklyn, New York 11204',
     state: 'NY',
     city: 'NEW YORK',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police'],
+    resourcesOffered: [Resource.funding, Resource.police],
     county: 'NEW YORK',
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -2592,7 +2592,7 @@ const organizations: Array<Organization> = [
     foundingYear: '1972',
     address: '70 Mulberry Street, New York, NY 10013',
     state: 'NY',
-    resourcesOffered: ['Contact Local Police', 'Outreach'],
+    resourcesOffered: [Resource.police, Resource.outreach],
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'CSO',
@@ -2633,7 +2633,7 @@ const organizations: Array<Organization> = [
     address: '720 57th Street Cellar Brooklyn, NY 11220-3681',
     state: 'NY',
     city: 'NEW YORK',
-    resourcesOffered: ['Safety Training', 'Legal Counsel'],
+    resourcesOffered: [Resource.training, Resource.legal],
     county: 'NEW YORK',
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -3012,7 +3012,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'NEW YORK',
-    resourcesOffered: ['Provide Funding', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.legal],
 
     type: 'CSO',
     status: RelationshipStatus.noRelation,
@@ -3456,7 +3456,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'NEW YORK',
-    resourcesOffered: ['Contact Local Police', 'Outreach', 'Safety Training', 'Safety Personnel'],
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.training, Resource.personnel],
     type: 'Hybrid',
     status: RelationshipStatus.noRelation,
 
@@ -3808,7 +3808,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'NEW YORK',
-    resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Personnel'],
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.personnel],
 
     type: 'Hybrid',
     status: RelationshipStatus.noRelation,
@@ -3850,7 +3850,7 @@ const organizations: Array<Organization> = [
     city: 'NEW YORK',
     county: 'NEW YORK',
     type: 'Hybrid',
-    resourcesOffered: ['Provide Funding', 'Contact Local Police', 'Outreach', 'Sound Equipment', 'Legal Counsel'],
+    resourcesOffered: [Resource.funding, Resource.police, Resource.outreach, Resource.sound, Resource.legal],
 
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -3939,7 +3939,7 @@ const organizations: Array<Organization> = [
     state: 'NY',
     city: 'NEW YORK',
     county: 'NEW YORK',
-    resourcesOffered: ['Outreach', 'Sound Equipment', 'Safety Training'],
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.training],
 
     type: 'Hybrid',
     status: RelationshipStatus.noRelation,
