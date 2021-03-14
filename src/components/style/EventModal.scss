@@ -108,6 +108,16 @@
   & p {
     margin-bottom: 0;
   }
+
+  &-resources-required{
+    display: flex;
+    flex-direction: row;
+    & button {
+      margin-left: 20px;
+      border: none;
+      background: none;
+    }
+  }
 }
 
 .overlay {
