@@ -1,8 +1,6 @@
 /* Imports from packages */
-import { bindActionCreators, Dispatch } from "redux";
 import { connect } from "react-redux";
 
-import { addOrg } from "../data/actions/organizationsActions";
 import Organization from "../data/types/organization";
 import Activist from "../data/types/activist";
 import RelationshipStatus from "../data/types/relationshipStatus";
@@ -17,11 +15,7 @@ interface StateProps {
   activist: Activist;
 }
 
-interface DispatchProps {
-  addOrg: typeof addOrg;
-}
-
-type Props = StateProps & DispatchProps;
+type Props = StateProps;
 
 const SuggestionsPage = (props: Props): JSX.Element => {
   console.log(props.organizations)
@@ -56,22 +50,12 @@ const mapStateToProps = (store: RootState): StateProps => {
   };
 };
 
-const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
-  return bindActionCreators(
-    {
-      // add other actions here
-      addOrg,
-    },
-    dispatch
-  );
-};
 
 export default connect<
   StateProps,
-  DispatchProps,
+  Record<string, unknown>,
   Record<string, unknown>,
   RootState
 >(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
 )(SuggestionsPage);
