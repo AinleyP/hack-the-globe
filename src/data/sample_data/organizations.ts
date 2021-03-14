@@ -48,24 +48,26 @@ const organizations: Array<Organization> = [
     bio:
       'APCF was founded in 1990 by API community leaders in response to the need for alternative funding for Los Angeles-based nonprofit organizations serving API communities. Prior to its incorporation, less than 0.3% of all local foundation funds went to API agencies, according to a 1988 study by A3PCON (Asian Pacific Policy & Planning Council). In 1986, the United Way of Greater Los Angeles funded only five organizations serving APIs. To raise funds for community organizations serving API communities, APCF initiated employee giving campaigns at various workplaces, including private companies, federal agencies, state agencies, county agencies, city agencies, and nonprofit organizations. In the past decade, APCF has diversified its fundraising efforts by developing other avenues for giving. With the growth of donor-advised funds, giving circles, grant making, scholarship funds, and capacity building initiatives, APCF has been able to cultivate philanthropy among APIs while providing multiple vehicles for donors to support the community.',
     personalMessage:
-      'Our event last December would not have been possible without Asian Pacific Community Fund! The funding they provided was a big help. We also had no experience with contacting our local police before an event and APCF guided us through that process. They ensured clear communication before and during the event.',
+      '"Our event last December would not have been possible without Asian Pacific Community Fund! We also had no experience with contacting our local police before an event and APCF guided us through that process." - anonymous activist',
     supportingTags: ['Stop AAPI Hate'],
     resourcesOffered: [Resource.funding, Resource.police, Resource.sound],
     eventsHelped: '63',
     sponsorshipToDate: '$426,794',
     website: 'https://www.apcf.org/current-grants',
-    pointsOfContact: [{
-      name: "David Wong",
-      position: "Sponsorship Officer",
-      email: "david.wong@apcfsc.com",
-      image: "https://source.unsplash.com/TMgQMXoglsM/94x94"
-    },
-    {
-      name: "Jenny Ngo",
-      position: "Events Specialist",
-      email: "jenny.ngo@apcfsc.com",
-      image: "https://source.unsplash.com/4-v5HrV1940/94x94"
-    }],
+    pointsOfContact: [
+      {
+        name: 'David Wong',
+        position: 'Sponsorship Officer',
+        email: 'david.wong@apcfsc.com',
+        image: 'https://source.unsplash.com/TMgQMXoglsM/94x94',
+      },
+      {
+        name: 'Jenny Ngo',
+        position: 'Events Specialist',
+        email: 'jenny.ngo@apcfsc.com',
+        image: 'https://source.unsplash.com/4-v5HrV1940/94x94',
+      },
+    ],
     pastEvents: [],
     testimonials: [],
     status: RelationshipStatus.requested,
