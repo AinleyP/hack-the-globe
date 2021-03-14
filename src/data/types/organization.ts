@@ -1,5 +1,6 @@
 import RelationshipStatus from './relationshipStatus';
 import { Resource } from './responsiblity';
+import PointOfContact from './pointOfContact'
 
 export default interface Organization {
   id: string;
@@ -21,7 +22,7 @@ export default interface Organization {
   eventsHelped?: string;
   sponsorshipToDate?: string;
   website?: string;
-  pointsOfContact?: Array<any>;
+  pointsOfContact?: Array<PointOfContact>;
   pastEvents?: Array<any>;
   testimonials?: Array<any>;
 }

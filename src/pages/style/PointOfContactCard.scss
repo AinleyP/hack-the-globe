@@ -1,0 +1,70 @@
+$poc-card-height: 94px;
+
+.poc-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  &-tag {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 4px 10px;
+  }
+}
+
+.poc-card {
+  @include card-border;
+
+  display: flex;
+  flex-direction: row;
+
+  height: $poc-card-height;
+
+  margin-right: 16px;
+
+  & img {
+    border-radius: 5px;
+    height: $poc-card-height;
+    width: $poc-card-height;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+
+    margin-left: 16px;
+
+    & h4 {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    & h5 {
+      font-size: 14px;
+      color: grey;
+    }
+
+    & h6 {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-cover{
+      margin-left: 4px;
+      background-color: #C3CDE1;
+      padding: 3px;
+      border-radius: 3px;
+    }
+
+  }
+}

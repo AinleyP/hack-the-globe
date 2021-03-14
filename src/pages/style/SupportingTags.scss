@@ -1,0 +1,11 @@
+.interests-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &-tag {
+    background-color: $yellow;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 4px 10px;
+  }
+}
