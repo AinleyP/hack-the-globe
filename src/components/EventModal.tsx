@@ -77,6 +77,13 @@ const EventModal = (props: Props): JSX.Element => {
     event.location = e.currentTarget.value
     setEvent(event)
     props.editEvent(event)
+
+    props.suggestOrgs(
+      organizations[0],
+      event.location,
+      event.responsiblities.map((r: Responsibility) => r.name)
+    );
+    
     forceUpdate()
   }
 
@@ -99,7 +106,7 @@ const EventModal = (props: Props): JSX.Element => {
             <h3>Event Site: facebook.com/protest-event</h3>
             <div className="event-modal-location">
               <h3>Location: </h3>
-              {isEditingLocation ? <input type="text" value={event.location} onChange={onLocationChange}/>: <h3>{event.location}</h3>}
+              {isEditingLocation ? <input type="text" value={event.location} onChange={onLocationChange} /> : <h3>{event.location}</h3>}
               <button onClick={() => { setIsEditingLocation(!isEditingLocation) }}>
                 {isEditingLocation ? "Save" : <img src={PenIcon} />}
               </button>
@@ -124,15 +131,15 @@ const EventModal = (props: Props): JSX.Element => {
           </div>
           <p>APCF was founded in 1990 by API community leaders in response to the need for alternative funding for Los Angeles-based nonprofit organizations serving API communities. Prior to its incorporation, less than 0.3% of all local foundation funds went to API agencies, according to a 1988 study by A3PCON (Asian Pacific Policy & Planning Council). In 1986, the United Way of Greater Los Angeles funded only five organizations serving APIs. To raise funds for community organizations serving API communities, APCF initiated employee giving campaigns at various workplaces, including private companies, federal agencies, state agencies, county agencies, city agencies, and nonprofit organizations. In the past decade, APCF has diversified its fundraising efforts by developing other avenues for giving. With the growth of donor-advised funds, giving circles, grant making, scholarship funds, and capacity building initiatives, APCF has been able to cultivate philanthropy among APIs while providing multiple vehicles for donors to support the community.</p>
 
-            {/* <div className="modal-footer"> */}
-            {/* <button type="button" className="organization-card-button" data-dismiss="modal">Close</button> */}
-            {/* <button type="button" className="organization-card-button">Save changes</button> */}
-            {/* </div> */}
-          </div>
+          {/* <div className="modal-footer"> */}
+          {/* <button type="button" className="organization-card-button" data-dismiss="modal">Close</button> */}
+          {/* <button type="button" className="organization-card-button">Save changes</button> */}
+          {/* </div> */}
         </div>
       </div>
     </div>
-  );
+  </div>
+
 };
 
 const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
