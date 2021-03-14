@@ -50,7 +50,7 @@ const organizations: Array<Organization> = [
     personalMessage:
       '"Our event last December would not have been possible without Asian Pacific Community Fund! We also had no experience with contacting our local police before an event and APCF guided us through that process." - Wendy Mak',
     supportingTags: ['Stop AAPI Hate'],
-    resourcesOffered: [Resource.funding, Resource.police, Resource.sound],
+    resourcesOffered: [Resource.funding, Resource.legal],
     eventsHelped: '63',
     sponsorshipToDate: '$426,794',
     website: 'https://www.apcf.org/current-grants',
@@ -1232,7 +1232,6 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    resourcesOffered: [Resource.outreach, Resource.sound, Resource.personnel],
     status: RelationshipStatus.noRelation,
 
     image: getImageUrl(),
@@ -2727,9 +2726,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound],
     status: RelationshipStatus.noRelation,
-
     image: getImageUrl(),
     compatibilityScore: 0,
   },
@@ -2784,7 +2781,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    resourcesOffered: [Resource.funding, Resource.outreach, Resource.personnel, Resource.training],
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound],
     status: RelationshipStatus.noRelation,
 
     image: getImageUrl(),
@@ -3100,7 +3097,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
-    resourcesOffered: [Resource.outreach, Resource.sound, Resource.training],
+    resourcesOffered: [Resource.sound],
     status: RelationshipStatus.noRelation,
 
     image: getImageUrl(),
