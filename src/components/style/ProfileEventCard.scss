@@ -8,6 +8,12 @@
 
   @include card-border;
 
+  &.active {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #CB7E66;
+  }
+
   & img {
     height: $card-height;
     width: $card-height;

@@ -18,10 +18,10 @@ const ActivistProfileEventList = (props: Props): JSX.Element => {
   }
 
   const renderEventCards = () => {
-    return props.events.map((event: Event) => (
+    return props.events.map((event: Event, idx: number) => (
       <button
         key={event.id}
-        className="profile-event-list-card"
+        className={"profile-event-list-card"}
         onClick={() => {
           console.log(event);
           props.suggestOrgs(
@@ -31,7 +31,7 @@ const ActivistProfileEventList = (props: Props): JSX.Element => {
           );
         }}
       >
-        <ActivistProfileEventCard event={event} onClick={onClickEvent}/>
+        <ActivistProfileEventCard event={event} onClick={onClickEvent} selected={idx === 0}/>
       </button>
     ));
   };
