@@ -21,7 +21,7 @@ const ActivistProfileEventList = (props: Props): JSX.Element => {
     return props.events.map((event: Event) => (
       <button
         key={event.id}
-        className="profile-event-list-card"
+        className={"profile-event-list-card"}
         onClick={() => {
           console.log(event);
           props.suggestOrgs(
@@ -31,7 +31,7 @@ const ActivistProfileEventList = (props: Props): JSX.Element => {
           );
         }}
       >
-        <ActivistProfileEventCard event={event} onClick={onClickEvent}/>
+        <ActivistProfileEventCard event={event} onClick={onClickEvent} selected={props.selectedEvent.id === event.id}/>
       </button>
     ));
   };
@@ -60,7 +60,8 @@ const connector = connect(null, mapDispatchToProps);
 type Props = ConnectedProps<typeof connector> & {
   events: Array<Event>,
   setModalVisibility: (isOpen: boolean) => void,
-  setSelectedEvent: (event: Event) => void
+  setSelectedEvent: (event: Event) => void,
+  selectedEvent: Event
 };
 
 export default connector(ActivistProfileEventList);

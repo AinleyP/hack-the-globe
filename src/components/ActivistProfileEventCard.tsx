@@ -5,11 +5,12 @@ import Tags from './Tags';
 
 interface Props {
   event: Event,
-  onClick: (event: Event) => void
+  onClick: (event: Event) => void,
+  selected: boolean
 }
 
 const ActivistProfileEventCard = (props: Props): JSX.Element => {
-  return <div className="profile-event-card" onClick={() => { props.onClick(props.event) }}>
+  return <div className={props.selected ? "profile-event-card  active" : "profile-event-card"} onClick={() => { props.onClick(props.event) }}>
     <img src={props.event.image} />
     <div className="profile-event-card-text">
       <h1>{props.event.name}</h1>

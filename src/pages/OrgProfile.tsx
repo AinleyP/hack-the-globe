@@ -50,9 +50,9 @@ const OrgProfile = (props: Props): JSX.Element => {
             <div className='row'><SupportingTags supportingTags={org.supportingTags ? org.supportingTags : []} />
             </div>
           </div>
-          <div className='col-1'>
+          {/* <div className='col-1'>
             <button className='org-profile-page-connect-button' onClick={() => { sendRequestToOrg(org) }}>Connect</button>
-          </div>
+          </div> */}
         </div>
         <div className='row org-profile-page-bio'><p>{org.bio}</p></div>
         <div className='row'>
