@@ -17,6 +17,13 @@ $card-height: 200px;
     height: $card-height;
   }
 
+  .link {
+    color: #fff;
+  }
+  .link:hover {
+    color: #fff;
+  }
+
   &-text {
     @include normal-text();
     display: flex;
@@ -72,7 +79,7 @@ $card-height: 200px;
   }
 
   &-request-indicator {
-    background-color: #41A35C;
+    background-color: #41a35c;
     color: white;
     border-radius: 10px;
     padding: 6px 12px;
@@ -88,4 +95,3 @@ $card-height: 200px;
     margin-bottom: 8px;
   }
 }
-

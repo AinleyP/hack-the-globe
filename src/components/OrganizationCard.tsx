@@ -80,7 +80,9 @@ const OrganizationCard = (props: Props): JSX.Element => {
             console.log();
           }}
         >
-          <Link to={'/organizations/detail'}>View Details</Link>
+          <Link className="link" to={'/organizations/detail'}>
+            View Details
+          </Link>
         </button>
         {renderActionButton()}
       </div>
