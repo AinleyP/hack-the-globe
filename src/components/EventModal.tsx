@@ -129,8 +129,14 @@ const EventModal = (props: Props): JSX.Element => {
           <div className="event-modal-title-section">
             <h2>Objectives</h2>
           </div>
-          <p>APCF was founded in 1990 by API community leaders in response to the need for alternative funding for Los Angeles-based nonprofit organizations serving API communities. Prior to its incorporation, less than 0.3% of all local foundation funds went to API agencies, according to a 1988 study by A3PCON (Asian Pacific Policy & Planning Council). In 1986, the United Way of Greater Los Angeles funded only five organizations serving APIs. To raise funds for community organizations serving API communities, APCF initiated employee giving campaigns at various workplaces, including private companies, federal agencies, state agencies, county agencies, city agencies, and nonprofit organizations. In the past decade, APCF has diversified its fundraising efforts by developing other avenues for giving. With the growth of donor-advised funds, giving circles, grant making, scholarship funds, and capacity building initiatives, APCF has been able to cultivate philanthropy among APIs while providing multiple vehicles for donors to support the community.</p>
-
+          <p>Many communities are seeing a disturbing wave of anti-Asian violence in recent weeks, including robberies,
+              burglaries and assaults targeting older Asian American and Pacific Islander (AAPI) individuals. In San
+              Francisco, 84-year-old Thai American Vicha Ratanapakdee died from injuries after he was pushed to the
+              sidewalk. In San Jose, Calif., a 64-year old Vietnamese American woman was robbed of $1,000 in cash. In
+              New York, Noel Quintana, who is 61and Filipino American, was slashed in the face during a subway
+              confrontation. And in Oakland, Calif., a 91-year-old man was shoved to the ground in a string of more than
+              20 robberies and assaults reported to the city’s Chinatown community leaders ahead of the Lunar New Year.
+              Let's do our part to stop this.</p>
           {/* <div className="modal-footer"> */}
           {/* <button type="button" className="organization-card-button" data-dismiss="modal">Close</button> */}
           {/* <button type="button" className="organization-card-button">Save changes</button> */}
