@@ -16,7 +16,7 @@ const ActivistProfileEventCard = (props: Props): JSX.Element => {
       <p>{props.event.description ? `${props.event.description.substring(0, 75)}...` : ""}</p>
       <Tags tags={props.event.responsiblities ? props.event.responsiblities.map((responsibility: Responsibility) => responsibility.name) : []} />
     </div>
-  );
+  </div>
 };
 
 export default ActivistProfileEventCard;
