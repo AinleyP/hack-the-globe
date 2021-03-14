@@ -1,5 +1,4 @@
 // dataset available at: https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/FLUPBJ/I1XEOW&version=6.0
-
 import Organization from '../types/organization';
 import RelationshipStatus from '../types/relationshipStatus';
 import {Resource} from '../types/responsiblity'
@@ -17,11 +16,12 @@ const organizations: Array<Organization> = [
     bio:
       'APCF was founded in 1990 by API community leaders in response to the need for alternative funding for Los Angeles-based nonprofit organizations serving API communities. Prior to its incorporation, less than 0.3% of all local foundation funds went to API agencies, according to a 1988 study by A3PCON (Asian Pacific Policy & Planning Council). In 1986, the United Way of Greater Los Angeles funded only five organizations serving APIs. To raise funds for community organizations serving API communities, APCF initiated employee giving campaigns at various workplaces, including private companies, federal agencies, state agencies, county agencies, city agencies, and nonprofit organizations. In the past decade, APCF has diversified its fundraising efforts by developing other avenues for giving. With the growth of donor-advised funds, giving circles, grant making, scholarship funds, and capacity building initiatives, APCF has been able to cultivate philanthropy among APIs while providing multiple vehicles for donors to support the community.',
     supportingTags: [],
-    personalMessage: 'APCF was great to work with. Remind me to add more text here!',
-    resourcesOffered: [Resource.funding, Resource.police],
-    eventsHelped: '63',
-    sponsorshipToDate: '$426,794',
-    website: 'https://www.apcf.org/current-grants',
+    personalMessage:
+      "APCF was great to work with. Remind me to add more text here!",
+    resourcesOffered: [Resource.funding, Resource.police, Resource.sound],
+    eventsHelped: "63",
+    sponsorshipToDate: "$426,794",
+    website: "https://www.apcf.org/current-grants",
     pointsOfContact: [],
     pastEvents: [],
     testimonials: [],

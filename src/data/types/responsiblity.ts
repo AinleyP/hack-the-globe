@@ -10,5 +10,5 @@ export enum Resource {
   sound = 'Sound Equipment',
   training = 'Safety Training',
   personnel = 'Safety Personnel',
-  legal = 'Legal Counsel'
+  legal = 'Legal Counsel',
 }

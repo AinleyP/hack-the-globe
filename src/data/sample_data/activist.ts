@@ -8,4 +8,4 @@ const activist: Activist = {
   events
 }
 
-export default activist
+export default activist;
