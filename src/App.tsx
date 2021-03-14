@@ -6,6 +6,7 @@ import SamplePage from './pages/SamplePage'
 import Navbar from './components/Navbar'
 import SuggestionsPage from './pages/SuggestionsPage'
 import MatchesPage from './pages/MatchesPage'
+import OrgProfile from './pages/OrgProfile'
 
 function App(): JSX.Element {
   return (
