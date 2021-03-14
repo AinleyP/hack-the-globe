@@ -1,4 +1,4 @@
-import Activist from '../types/activist'
+import Activist from '../types/activist';
 
 const activist: Activist = {
   id: 1,
@@ -7,4 +7,4 @@ const activist: Activist = {
   events: []
 }
 
-export default activist
+export default activist;
