@@ -121,7 +121,14 @@ const organizations: Array<Organization> = [
     city: 'MINNEAPOLIS',
     county: 'HENNEPIN',
     type: 'Advocacy',
-    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.training, Resource.personnel, Resource.legal],
+    resourcesOffered: [
+      Resource.funding,
+      Resource.outreach,
+      Resource.sound,
+      Resource.training,
+      Resource.personnel,
+      Resource.legal,
+    ],
     status: RelationshipStatus.pending,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -208,7 +215,7 @@ const organizations: Array<Organization> = [
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
-
+    resourcesOffered: [Resource.personnel, Resource.training, Resource.legal],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -221,6 +228,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
+    resourcesOffered: [Resource.funding, Resource.personnel],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -249,6 +257,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
+    resourcesOffered: [Resource.personnel],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -263,6 +272,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
+    resourcesOffered: [Resource.outreach, Resource.training, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -306,6 +316,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
+    resourcesOffered: [Resource.police],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -460,6 +471,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -489,7 +501,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
-
+    resourcesOffered: [Resource.police, Resource.sound, Resource.personnel],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -590,6 +602,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'Advocacy',
+    resourcesOffered: [Resource.sound, Resource.personnel],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -719,9 +732,7 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
-
     resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.legal],
-
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -762,6 +773,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.police, Resource.sound],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -875,6 +887,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.police, Resource.training],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -905,7 +918,6 @@ const organizations: Array<Organization> = [
     resourcesOffered: [Resource.police, Resource.sound, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
-
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -920,7 +932,6 @@ const organizations: Array<Organization> = [
     resourcesOffered: [Resource.outreach, Resource.personnel, Resource.legal],
     type: 'CSO',
     status: RelationshipStatus.noRelation,
-
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -1032,6 +1043,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.sound, Resource.training, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -1088,6 +1100,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.police, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -1172,6 +1185,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.personnel],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -1460,6 +1474,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -1701,6 +1716,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.personnel, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2142,6 +2158,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.police, Resource.outreach, Resource.personnel, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2409,6 +2426,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.sound, Resource.training, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2423,6 +2441,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.sound, Resource.personnel, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2661,6 +2680,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2717,6 +2737,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.personnel, Resource.training],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2875,6 +2896,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.personnel, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2903,6 +2925,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.training, Resource.legal],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -2931,6 +2954,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.outreach],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -3029,6 +3053,7 @@ const organizations: Array<Organization> = [
     city: 'SAN FRANCISCO',
     county: 'SAN FRANCISCO',
     type: 'CSO',
+    resourcesOffered: [Resource.outreach, Resource.sound, Resource.training],
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
@@ -3690,7 +3715,7 @@ const organizations: Array<Organization> = [
     county: 'SAN FRANCISCO',
     type: 'Hybrid',
     status: RelationshipStatus.noRelation,
-
+    resourcesOffered: [Resource.funding, Resource.legal],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -4041,7 +4066,7 @@ const organizations: Array<Organization> = [
     county: 'SAN FRANCISCO',
     type: 'Hybrid',
     status: RelationshipStatus.noRelation,
-
+    resourcesOffered: [Resource.legal],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -4083,7 +4108,7 @@ const organizations: Array<Organization> = [
     county: 'SAN FRANCISCO',
     type: 'Hybrid',
     status: RelationshipStatus.noRelation,
-
+    resourcesOffered: [Resource.funding],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
