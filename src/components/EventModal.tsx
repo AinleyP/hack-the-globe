@@ -19,13 +19,14 @@ interface DispatchProps {
 }
 
 //create your forceUpdate hook
-function useForceUpdate(){
+function useForceUpdate() {
   const [value, setValue] = useState(0); // integer state
   return () => setValue(value => value + 1); // update the state to force render
 }
 
 const EventModal = (props: Props): JSX.Element => {
-  const [isEditing, setIsEditing] = useState(false)
+  const [isEditingTags, setIsEditingTags] = useState(false)
+  const [isEditingLocation, setIsEditingLocation] = useState(false)
   const [event, setEvent] = useState(props.event)
   const forceUpdate = useForceUpdate();
 
@@ -63,6 +64,13 @@ const EventModal = (props: Props): JSX.Element => {
     forceUpdate()
   }
 
+  const onLocationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    event.location = e.currentTarget.value
+    setEvent(event)
+    props.editEvent(event)
+    forceUpdate()
+  }
+
   return <div>
     <div className="overlay"></div>
     <div className="event-modal">
@@ -80,19 +88,25 @@ const EventModal = (props: Props): JSX.Element => {
             <h3>Volunteers Needed</h3>
             <h3>Host: Jane Doe</h3>
             <h3>Event Site: facebook.com/protest-event</h3>
-            <h3>Location: San Francisco, California, U.S.</h3>
+            <div className="event-modal-location">
+              <h3>Location: </h3>
+              {isEditingLocation ? <input type="text" value={event.location} onChange={onLocationChange}/>: <h3>{event.location}</h3>}
+              <button onClick={() => { setIsEditingLocation(!isEditingLocation) }}>
+                {isEditingLocation ? "Save" : <img src={PenIcon} />}
+              </button>
+            </div>
           </div>
         </div>
         <div className="event-modal-text">
           <div className="event-modal-title-section">
             <div className="event-modal-resources-required">
               <h2>Resources required</h2>
-              <button onClick={() => { setIsEditing(!isEditing) }}>
-                {isEditing ? "Save" : <img src={PenIcon} />}
+              <button onClick={() => { setIsEditingTags(!isEditingTags) }}>
+                {isEditingTags ? "Save" : <img src={PenIcon} />}
               </button>
             </div>
           </div>
-          {isEditing ?
+          {isEditingTags ?
             <TagsInput value={event.responsiblities.map((item) => item.name)} onChange={onTagsChange} />
             : <Tags tags={event.responsiblities.map((item) => item.name)} />
           }
