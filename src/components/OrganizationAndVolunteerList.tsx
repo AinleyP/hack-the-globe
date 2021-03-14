@@ -6,6 +6,7 @@ import Volunteer from '../data/types/volunteer'
 
 import OrganizationCard from './OrganizationCard'
 import VolunteerCard from './VolunteerCard'
+import EventModal from './EventModal'
 
 interface Props {
   organizations: Array<Organization>,
@@ -15,19 +16,31 @@ interface Props {
 const OrganizationAndVolunteerList = (props: Props): JSX.Element => {
   const [selectedTab, setSelectedTab] = useState("Organizations");
 
+  const [modalIsOpen, setModalVisibility] = useState(false);
+
+  if (modalIsOpen===true) {
+    document.body.style.overflow = 'hidden';
+  }
+
+  // let modalIsOpen = false;
+  // const setModalVisibility = (isOpen: boolean) => {
+  //     modalIsOpen = isOpen;
+  // }
+
   const selectTab = (event: React.MouseEvent<HTMLElement>) => {
     setSelectedTab(event.currentTarget.innerText)
   }
 
   let displayList
   if (selectedTab === "Organizations") {
-    displayList = props.organizations.map((item) => <div className="orgs-and-volunteers-list-card"><OrganizationCard key={item.id} org={item}></OrganizationCard></div>)
+    displayList = props.organizations.map((item) => <div className="orgs-and-volunteers-list-card"><OrganizationCard key={item.id} setModalVisibility={setModalVisibility} org={item}></OrganizationCard></div>)
   }
   else {
     displayList = props.volunteers.map((item) => (<div className="orgs-and-volunteers-list-card"><VolunteerCard key={item.id} volunteer={item}></VolunteerCard></div>))
   }
 
   return <div className="orgs-and-volunteers-list">
+    {modalIsOpen ? <EventModal setModalVisibility={setModalVisibility} ></EventModal> : <div></div>}
     <div className="orgs-and-volunteers-list-header">
       <div className="orgs-and-volunteers-list-tabs">
         <button className={`orgs-and-volunteers-list-tab ${selectedTab === "Organizations" ? "active" : ""}`} onClick={selectTab}>Organizations</button>

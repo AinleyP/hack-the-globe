@@ -1,0 +1,74 @@
+.event-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 400px;
+  position: fixed;
+  z-index: 99 !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  & img {
+    border-radius: 5px;
+    padding-right: 16px;
+  }
+
+  &-text {
+    @include normal-text();
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  &-title {
+    @include normal-text();
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  & h1 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+  }
+  & h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  &-buttons-div {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+
+  &-button {
+    font-size: 18px;
+    color: white;
+    border: none;
+    height: 44px;
+    border-radius: 3px;
+  }
+
+  &-title-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 98;
+  background-color: black;
+  opacity: 40%;
+}

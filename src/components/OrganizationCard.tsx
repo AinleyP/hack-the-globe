@@ -50,12 +50,17 @@ const OrganizationCard = (props: Props): JSX.Element => {
     }
   }
 
+  const onClickViewDetails = () => {
+    props.setModalVisibility(true)
+  }
+
   const renderRequestIndicator = () => {
     if (props.org.status === RelationshipStatus.requested) {
       return <div className="organization-card-request-indicator">Connected with you</div>
 
     }
   }
+
 
   return <div className="organization-card">
     <img src={props.org.image} />
@@ -68,9 +73,11 @@ const OrganizationCard = (props: Props): JSX.Element => {
       <Tags tags={props.org.resourcesOffered ? props.org.resourcesOffered : []} />
     </div>
     <div className="organization-card-buttons-div">
-      <button className="organization-card-view-details-button organization-card-button">View Details</button>
+      <button className="organization-card-view-details-button organization-card-button" onClick={onClickViewDetails}>View Details</button>
+      <button className="organization-card-view-details-button organization-card-button">Do Something</button>
       {renderActionButton()}
     </div>
+    
   </div>;
 };
 const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
@@ -87,7 +94,9 @@ const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
 const connector = connect(null, mapDispatchToProps);
 
 type Props = ConnectedProps<typeof connector> & {
-  org: Organization
-};;
+  org: Organization,
+  setModalVisibility: (isOpen: boolean) => void
+
+};
 
 export default connector(OrganizationCard);
