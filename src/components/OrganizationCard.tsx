@@ -71,6 +71,7 @@ const OrganizationCard = (props: Props): JSX.Element => {
           {renderRequestIndicator()}
         </div>
         <p>{props.org.bio ? `${props.org.bio.substring(0, 200)}...` : ''}</p>
+        <h6>{props.org.address ?? ''}</h6>
         <Tags tags={props.org.resourcesOffered ? props.org.resourcesOffered : []} />
       </div>
       <div className="organization-card-buttons-div">
