@@ -3,7 +3,8 @@ import { bindActionCreators, Dispatch } from "redux";
 import { connect } from "react-redux";
 
 import { addOrg } from "../data/actions/organizationsActions";
-import Organization, { OrganizationStatus } from "../data/types/organization";
+import Organization from "../data/types/organization";
+import RelationshipStatus from '../data/types/relationshipStatus'
 import { RootState } from "../data/reducers";
 
 interface StateProps {
@@ -27,7 +28,7 @@ const SampleComponent = (props: Props): JSX.Element => {
       city: "SAN FRANCISCO",
       county: "SAN FRANCISCO",
       type: "Advocacy",
-      status: OrganizationStatus.noRelation,
+      status: RelationshipStatus.noRelation,
       image: "https://source.unsplash.com/Ch_QF4IocbU/150x150"
     });
   };
