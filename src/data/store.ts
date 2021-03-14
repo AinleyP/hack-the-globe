@@ -17,9 +17,6 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 
-console.log(sampleOrganizations)
-console.log(sampleActivist)
-
 const DEFAULT_STATE: RootState = {
   organizations :{
     data: sampleOrganizations

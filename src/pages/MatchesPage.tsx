@@ -12,26 +12,22 @@ import OrganizationAndVolunteerList from '../components/OrganizationAndVolunteer
 
 interface StateProps {
   organizations: Array<Organization>;
-  activist: Activist;
 }
 
 type Props = StateProps;
 
-const SuggestionsPage = (props: Props): JSX.Element => {
+const MatchesPage = (props: Props): JSX.Element => {
   return (
     <Layout>
-      <div className="suggestions-page">
+      <div className="matches-page">
         <div className="banner">
           <img src={Banner} />
         </div>
-        <div className="suggestions-page-content">
-          <h1 className="suggestions-page-header">Suggestions</h1>
-          <div className="suggestions-page-event-list">
-            <ActivistProfileEventList events={props.activist.events ? props.activist.events : []} />
-          </div>
-          <div className="suggestions-page-organization-list">
+        <div className="matches-page-content">
+          <h1 className="matches-page-header">Matches</h1>
+          <div className="matches-page-organization-list">
             <OrganizationAndVolunteerList 
-            organizations={props.organizations ? props.organizations.filter((org: Organization) => org.status === RelationshipStatus.requested || org.status === RelationshipStatus.suggested) : []} 
+            organizations={props.organizations ? props.organizations.filter((org: Organization) => org.status === RelationshipStatus.pending || org.status === RelationshipStatus.matched) : []} 
             volunteers={[]} />
           </div>
         </div>
@@ -43,7 +39,6 @@ const SuggestionsPage = (props: Props): JSX.Element => {
 const mapStateToProps = (store: RootState): StateProps => {
   return {
     organizations: store.organizations.data,
-    activist: store.activist.data,
   };
 };
 
@@ -55,4 +50,4 @@ export default connect<
   RootState
 >(
   mapStateToProps
-)(SuggestionsPage);
+)(MatchesPage);

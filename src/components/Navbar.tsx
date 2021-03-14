@@ -18,7 +18,6 @@ type Props = StateProps;
 
 const Navbar = (props: Props): JSX.Element => {
   const location = useLocation();
-  console.log(location.pathname);
 
   const isCurrentPath = (regex: RegExp): boolean => regex.test(location.pathname)
 

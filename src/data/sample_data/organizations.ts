@@ -66,7 +66,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: [Resource.police, Resource.outreach, Resource.personnel, Resource.legal],
 
     type: 'Advocacy',
-    status: RelationshipStatus.noRelation,
+    status: RelationshipStatus.matched,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
   },
@@ -79,7 +79,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: RelationshipStatus.noRelation,
+    status: RelationshipStatus.matched,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: [Resource.sound, Resource.training],
     compatibilityScore: 0,
@@ -93,7 +93,7 @@ const organizations: Array<Organization> = [
     city: 'LOS ANGELES',
     county: 'LOS ANGELES',
     type: 'Advocacy',
-    status: RelationshipStatus.noRelation,
+    status: RelationshipStatus.matched,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: [Resource.police, Resource.outreach],
     compatibilityScore: 0,
@@ -107,7 +107,7 @@ const organizations: Array<Organization> = [
     city: 'WASHINGTON DC',
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
-    status: RelationshipStatus.noRelation,
+    status: RelationshipStatus.pending,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
@@ -122,7 +122,7 @@ const organizations: Array<Organization> = [
     county: 'HENNEPIN',
     type: 'Advocacy',
     resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.training, Resource.personnel, Resource.legal],
-    status: RelationshipStatus.noRelation,
+    status: RelationshipStatus.pending,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,
@@ -137,7 +137,7 @@ const organizations: Array<Organization> = [
     county: 'DISTRICT OF COLUMBIA',
     type: 'Advocacy',
     resourcesOffered: [Resource.police, Resource.sound, Resource.legal],
-    status: RelationshipStatus.noRelation,
+    status: RelationshipStatus.pending,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     compatibilityScore: 0,

@@ -1,0 +1,22 @@
+.matches-page {
+
+  &-header{
+    @include normal-text;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &-content {
+    padding-top: 32px;
+    padding-left: 61px;
+    padding-right: 24px;
+  }
+
+  &-organization-list {
+    
+  }
+}
+.banner {
+  background-color: #4E2A16;
+}
