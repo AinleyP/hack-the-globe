@@ -17,6 +17,13 @@ $card-height: 200px;
     height: $card-height;
   }
 
+  .link {
+    color: #fff;
+  }
+  .link:hover {
+    color: #fff;
+  }
+
   &-text {
     @include normal-text();
     display: flex;

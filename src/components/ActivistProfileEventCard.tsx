@@ -1,7 +1,7 @@
 /* Imports from packages */
-import Event from '../data/types/event'
-import Responsibility, { Resource } from '../data/types/responsiblity'
-import Tags from './Tags'
+import Event from '../data/types/event';
+import Responsibility, { Resource } from '../data/types/responsiblity';
+import Tags from './Tags';
 
 interface Props {
   event: Event,
@@ -16,7 +16,7 @@ const ActivistProfileEventCard = (props: Props): JSX.Element => {
       <p>{props.event.description ? `${props.event.description.substring(0, 75)}...` : ""}</p>
       <Tags tags={props.event.responsiblities ? props.event.responsiblities.map((responsibility: Responsibility) => responsibility.name) : []} />
     </div>
-  </div>;
+  );
 };
 
-export default ActivistProfileEventCard
+export default ActivistProfileEventCard;

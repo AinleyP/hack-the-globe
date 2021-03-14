@@ -1,4 +1,9 @@
 .profile-event-list {
+  button {
+    background-color: white;
+    border-width: 0;
+  }
+
   &-header {
     border-bottom: $grey solid;
 
@@ -23,4 +28,3 @@
     margin-right: 14px;
   }
 }
-
