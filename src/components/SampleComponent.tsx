@@ -30,7 +30,8 @@ const SampleComponent = (props: Props): JSX.Element => {
       county: "SAN FRANCISCO",
       type: "Advocacy",
       status: RelationshipStatus.noRelation,
-      image: "https://source.unsplash.com/Ch_QF4IocbU/150x150"
+      image: "https://source.unsplash.com/Ch_QF4IocbU/150x150",
+      compatibilityScore: 70
     });
   };
   return (

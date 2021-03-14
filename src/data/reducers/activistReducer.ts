@@ -8,7 +8,7 @@ export interface ActivistState {
 }
 
 const defaultState: ActivistState = {
-  data:sampleActivist
+  data: sampleActivist
 };
 
 /**

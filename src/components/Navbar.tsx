@@ -36,12 +36,12 @@ const Navbar = (props: Props): JSX.Element => {
         <label>Profile</label>
       </span>
     </a>
-    <a className={`my-navbar-pill nav-link ${isCurrentPath(/^\/pending-requests\/?$/) ? "active" : ""}`} id="v-pills-profile-tab" data-toggle="pill" href="/pending-requests" role="tab" aria-controls="v-pills-profile" aria-selected={isCurrentPath(/^\/pending-matches\/?$/)}>
+    <a className={`my-navbar-pill nav-link ${isCurrentPath(/^\/suggestions\/?$/) ? "active" : ""}`} id="v-pills-profile-tab" data-toggle="pill" href="/suggestions" role="tab" aria-controls="v-pills-profile" aria-selected={isCurrentPath(/^\/pending-matches\/?$/)}>
       <span>
         <span className="my-navbar-icon">
           <AkIconQuote label="" />
         </span>
-        <label>Pending</label>
+        <label>Suggestions</label>
       </span>
     </a>
     <a className={`my-navbar-pill nav-link ${isCurrentPath(/^\/matches\/?$/) ? "active" : ""}`} id="v-pills-messages-tab" data-toggle="pill" href="/matches" role="tab" aria-controls="v-pills-messages" >
