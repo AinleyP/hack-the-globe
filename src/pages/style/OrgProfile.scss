@@ -14,12 +14,10 @@
   &-logo {
     grid-column-end: span 2;
     grid-row-end: span 2;
-    color: red;
-    border: 1px solid red;
+    // color: red;
+    // border: 1px solid red;
     padding: 0;
-    & img {
-      
-    }
+  
   }
 
   &-grey-banner {
