@@ -20,6 +20,7 @@ const events: Array<Event> = [
         status: 'unfilled',
       },
     ],
+    supportingTags: ['Stop AAPI Hate'],
   },
   {
     id: '1',
@@ -43,6 +44,7 @@ const events: Array<Event> = [
         status: 'filled',
       },
     ],
+    supportingTags: ['Stop AAPI Hate'],
   },
   {
     id: '2',
@@ -65,6 +67,7 @@ const events: Array<Event> = [
         status: 'filled',
       },
     ],
+    supportingTags: ['Stop AAPI Hate'],
   },
 ];
 

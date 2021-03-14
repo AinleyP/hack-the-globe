@@ -5,12 +5,22 @@ import Tags from './Tags'
 import ActivistProfileEventCard from './ActivistProfileEventCard'
 
 interface Props {
-  events: Array<Event>
+  events: Array<Event>,
+  setModalVisibility: (isOpen: boolean) => void,
+  setSelectedEvent: (event: Event) => void
 }
 
 const ActivistProfileEventList = (props: Props): JSX.Element => {
+  const onClickEvent = (event: Event) => {
+    props.setModalVisibility(true)
+    props.setSelectedEvent(event)
+  }
+
   const renderEventCards = () => {
-    return props.events.map((event: Event) => <div key={event.id} className="profile-event-list-card"><ActivistProfileEventCard event={event} /></div>)
+    return props.events.map((event: Event) =>
+      <div key={event.id} className="profile-event-list-card">
+        <ActivistProfileEventCard event={event} onClick={onClickEvent} />
+      </div>)
   }
 
   return <div className="profile-event-list">
