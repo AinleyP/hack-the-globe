@@ -1,42 +1,47 @@
-import { AnyAction } from 'redux'
+import { AnyAction } from 'redux';
 
 /* Imports from local files */
-import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG, ACCEPT_REQUEST_FROM_ORG, SEND_REQUEST_TO_ORG } from "./actionTypes";
-import Organization from '../types/organization'
+import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG, ACCEPT_REQUEST_FROM_ORG, SEND_REQUEST_TO_ORG, SUGGEST_ORGS } from './actionTypes';
+import Organization from '../types/organization';
+import { Resource } from '../types/responsiblity';
 
 /**
  * Actions should be as light weight as possible. No asynchronous processes should be started in actions.
- * This is why the data fetching was done prior to loading the data to the global store.
+ * This is why the organization fetching was done prior to loading the organization to the global store.
  *
- * "uploads" the data taken as an input into the datastore
+ * "uploads" the organization taken as an input into the organizationstore
  */
-export interface OrganizationsAction extends AnyAction{
-  type: string,
-  payload: Organization,
-  
+export interface OrganizationsAction extends AnyAction {
+  type: string;
+  payload: { organization: Organization; location?: string; resourcesRequired?: Array<Resource> };
 }
 
-export const addMatchedOrg = (data: Organization): OrganizationsAction => ({
+export const addMatchedOrg = (organization: Organization): OrganizationsAction => ({
   type: ADD_MATCHED_ORG,
-  payload: data,
+  payload: { organization },
 });
 
-export const addSuggestedOrg = (data: Organization): OrganizationsAction => ({
+export const addSuggestedOrg = (organization: Organization): OrganizationsAction => ({
   type: ADD_SUGGESTED_ORG,
-  payload: data,
+  payload: { organization },
 });
 
-export const addOrg = (data: Organization): OrganizationsAction => ({
+export const addOrg = (organization: Organization): OrganizationsAction => ({
   type: ADD_ORG,
-  payload: data,
+  payload: { organization },
 });
 
-export const acceptRequestFromOrg = (data: Organization): OrganizationsAction => ({
+export const acceptRequestFromOrg = (organization: Organization): OrganizationsAction => ({
   type: ACCEPT_REQUEST_FROM_ORG,
-  payload: data,
+  payload: { organization },
 });
 
-export const sendRequestToOrg = (data: Organization): OrganizationsAction => ({
+export const sendRequestToOrg = (organization: Organization): OrganizationsAction => ({
   type: SEND_REQUEST_TO_ORG,
-  payload: data,
+  payload: { organization },
+});
+
+export const suggestOrgs = (organization: Organization, location: string, resourcesRequired: Array<Resource>): OrganizationsAction => ({
+  type: SUGGEST_ORGS,
+  payload: { organization, location, resourcesRequired },
 });
