@@ -1,0 +1,28 @@
+.profile-event-list {
+  &-header {
+    border-bottom: $grey solid;
+
+    & h2 {
+      @include normal-text;
+      border: none;
+      background: none;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+
+    margin-top: 16px;
+  }
+  &-card {
+    margin-right: 14px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
