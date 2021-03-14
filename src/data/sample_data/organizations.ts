@@ -731,13 +731,11 @@ const organizations: Array<Organization> = [
     id: '47',
     name: '80-20 Initiative',
     foundingYear: '1998',
-
     state: '',
     city: '',
     county: '',
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
-
     image: getImageUrl(),
     compatibilityScore: 0,
   },
@@ -779,7 +777,6 @@ const organizations: Array<Organization> = [
     county: 'LOS ANGELES',
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
-    resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.legal],
     image: getImageUrl(),
     compatibilityScore: 0,
   },
@@ -3543,7 +3540,6 @@ const organizations: Array<Organization> = [
     id: '245',
     name: 'Asian American Cancer Support Network',
     foundingYear: '2003',
-
     state: 'CA',
     city: 'SUNNYVALE',
     county: 'SANTA CLARA',
