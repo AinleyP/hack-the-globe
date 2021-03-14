@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  &-navbar{
+    width: 15%;
+  }
+  &-content{
+    width: 85%;
+  }
+}
