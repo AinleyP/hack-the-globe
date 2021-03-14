@@ -47,6 +47,7 @@ const SuggestionsPage = (props: Props): JSX.Element => {
               <ActivistProfileEventList 
               setModalVisibility={setModalVisibility}
               setSelectedEvent={setSelectedEvent}
+              selectedEvent={selectedEvent}
               events={props.activist.events ? props.activist.events : []} 
               />
             </div>
