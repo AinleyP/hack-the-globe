@@ -16,6 +16,7 @@
 
   &-text {
     @include normal-text;
+    text-align: left;
 
     margin-left: 27px;
     & h1 {
