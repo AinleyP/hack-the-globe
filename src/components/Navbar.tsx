@@ -51,14 +51,6 @@ const Navbar = (props: Props): JSX.Element => {
         <label>Matches</label>
       </span>
     </a>
-    <a className={`my-navbar-pill nav-link ${isCurrentPath(/^\/events\/?$/) ? "active" : ""}`} id="v-pills-settings-tab" data-toggle="pill" href="/events" role="tab" aria-controls="v-pills-settings">
-      <span>
-        <span className="my-navbar-icon">
-          <AkIconCalender label="" />
-        </span>
-        <label>Events</label>
-      </span>
-    </a>
     <a className={`my-navbar-pill nav-link ${isCurrentPath(/^\/settings\/?$/) ? "active" : ""}`} id="v-pills-settings-tab" data-toggle="pill" href="/settings" role="tab" aria-controls="v-pills-settings">
       <span>
         <span className="my-navbar-icon">

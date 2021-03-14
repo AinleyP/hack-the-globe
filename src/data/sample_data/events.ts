@@ -3,6 +3,29 @@ import { Resource } from '../types/responsiblity';
 
 const events: Array<Event> = [
   {
+    id: '2',
+    image: 'https://msmagazine.com/wp-content/uploads/2021/02/Incremental-Growth-Is-Not-Equal-Representation-1.jpg',
+    name: 'Rally Against Anti-Asian Hate Crimes & Racism',
+    description:
+      'An approximately two-hour rally to raise awareness of rising violence against the Asian Pacific Islander community was held at Los Angeles State Historic Park adjacent to Chinatown.',
+    location: 'NEW YORK',
+    responsiblities: [
+      {
+        name: Resource.funding,
+        status: 'filled',
+      },
+      {
+        name: Resource.legal,
+        status: 'filled',
+      },
+      {
+        name: Resource.sound,
+        status: 'unfilled',
+      },
+    ],
+    supportingTags: ['Stop AAPI Hate'],
+  },
+  {
     id: '0',
     image:
       'https://www.kalw.org/sites/kalw/files/styles/x_large/public/202102/210212182902-chinatown-protest-san-francisco-file-2020-exlarge-169.jpg',
@@ -41,25 +64,6 @@ const events: Array<Event> = [
       },
       {
         name: Resource.police,
-        status: 'filled',
-      },
-    ],
-    supportingTags: ['Stop AAPI Hate'],
-  },
-  {
-    id: '2',
-    image: 'https://msmagazine.com/wp-content/uploads/2021/02/Incremental-Growth-Is-Not-Equal-Representation-1.jpg',
-    name: 'Rally Against Anti-Asian Hate Crimes & Racism',
-    description:
-      'An approximately two-hour rally to raise awareness of rising violence against the Asian Pacific Islander community was held at Los Angeles State Historic Park adjacent to Chinatown.',
-    location: 'LOS ANGELES',
-    responsiblities: [
-      {
-        name: Resource.funding,
-        status: 'filled',
-      },
-      {
-        name: Resource.legal,
         status: 'filled',
       },
     ],
