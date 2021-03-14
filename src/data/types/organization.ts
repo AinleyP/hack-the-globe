@@ -1,5 +1,5 @@
-import RelationshipStatus from './relationshipStatus'
-import { Resource } from './responsiblity'
+import RelationshipStatus from './relationshipStatus';
+import { Resource } from './responsiblity';
 
 export default interface Organization {
   id: string;
@@ -10,8 +10,9 @@ export default interface Organization {
   city: string;
   county: string;
   type: string;
-  status?: RelationshipStatus;
+  status: RelationshipStatus;
   image: string;
+  compatibilityScore: number;
 
   bio?: string;
   supportingTags?: Array<string>;

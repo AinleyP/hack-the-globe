@@ -1,7 +1,7 @@
 // dataset available at: https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/FLUPBJ/I1XEOW&version=6.0
 import Organization from '../types/organization';
 import RelationshipStatus from '../types/relationshipStatus';
-import {Resource} from '../types/responsiblity'
+import { Resource } from '../types/responsiblity';
 
 const organizations: Array<Organization> = [
   {
@@ -16,17 +16,17 @@ const organizations: Array<Organization> = [
     bio:
       'APCF was founded in 1990 by API community leaders in response to the need for alternative funding for Los Angeles-based nonprofit organizations serving API communities. Prior to its incorporation, less than 0.3% of all local foundation funds went to API agencies, according to a 1988 study by A3PCON (Asian Pacific Policy & Planning Council). In 1986, the United Way of Greater Los Angeles funded only five organizations serving APIs. To raise funds for community organizations serving API communities, APCF initiated employee giving campaigns at various workplaces, including private companies, federal agencies, state agencies, county agencies, city agencies, and nonprofit organizations. In the past decade, APCF has diversified its fundraising efforts by developing other avenues for giving. With the growth of donor-advised funds, giving circles, grant making, scholarship funds, and capacity building initiatives, APCF has been able to cultivate philanthropy among APIs while providing multiple vehicles for donors to support the community.',
     supportingTags: [],
-    personalMessage:
-      "APCF was great to work with. Remind me to add more text here!",
+    personalMessage: 'APCF was great to work with. Remind me to add more text here!',
     resourcesOffered: [Resource.funding, Resource.police, Resource.sound],
-    eventsHelped: "63",
-    sponsorshipToDate: "$426,794",
-    website: "https://www.apcf.org/current-grants",
+    eventsHelped: '63',
+    sponsorshipToDate: '$426,794',
+    website: 'https://www.apcf.org/current-grants',
     pointsOfContact: [],
     pastEvents: [],
     testimonials: [],
     status: RelationshipStatus.requested,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '2',
@@ -40,6 +40,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.suggested,
     resourcesOffered: [Resource.outreach, Resource.sound, Resource.training, Resource.personnel, Resource.legal],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '3',
@@ -52,6 +53,7 @@ const organizations: Array<Organization> = [
     type: 'Advocacy',
     status: RelationshipStatus.suggested,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '4',
@@ -66,6 +68,7 @@ const organizations: Array<Organization> = [
     type: 'Advocacy',
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '5',
@@ -79,6 +82,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: [Resource.sound, Resource.training],
+    compatibilityScore: 0,
   },
   {
     id: '6',
@@ -92,6 +96,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: [Resource.police, Resource.outreach],
+    compatibilityScore: 0,
   },
   {
     id: '7',
@@ -105,6 +110,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '8',
@@ -119,6 +125,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '9',
@@ -133,6 +140,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '10',
@@ -146,6 +154,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '11',
@@ -159,6 +168,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '12',
@@ -172,6 +182,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '13',
@@ -185,6 +196,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '14',
@@ -198,6 +210,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '15',
@@ -211,6 +224,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '16',
@@ -224,6 +238,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '17',
@@ -237,6 +252,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '18',
@@ -250,6 +266,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '19',
@@ -263,6 +280,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '20',
@@ -277,6 +295,7 @@ const organizations: Array<Organization> = [
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
     resourcesOffered: [Resource.outreach, Resource.training, Resource.personnel],
+    compatibilityScore: 0,
   },
   {
     id: '21',
@@ -290,6 +309,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '22',
@@ -303,6 +323,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '23',
@@ -316,6 +337,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '24',
@@ -329,6 +351,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '25',
@@ -342,6 +365,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '26',
@@ -355,6 +379,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '27',
@@ -368,6 +393,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '28',
@@ -381,6 +407,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '29',
@@ -394,6 +421,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '30',
@@ -407,6 +435,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '31',
@@ -420,6 +449,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '32',
@@ -433,6 +463,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '33',
@@ -446,6 +477,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '34',
@@ -459,6 +491,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '35',
@@ -472,6 +505,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '36',
@@ -487,6 +521,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '37',
@@ -500,6 +535,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '38',
@@ -513,6 +549,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '39',
@@ -528,6 +565,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '40',
@@ -541,6 +579,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '41',
@@ -554,6 +593,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '42',
@@ -568,6 +608,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '43',
@@ -582,6 +623,7 @@ const organizations: Array<Organization> = [
 
     resourcesOffered: [Resource.police, Resource.outreach, Resource.sound, Resource.personnel],
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '44',
@@ -595,6 +637,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '45',
@@ -608,6 +651,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '46',
@@ -621,6 +665,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '47',
@@ -634,6 +679,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '48',
@@ -647,6 +693,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '49',
@@ -660,6 +707,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '50',
@@ -675,6 +723,7 @@ const organizations: Array<Organization> = [
     resourcesOffered: [Resource.funding, Resource.outreach, Resource.sound, Resource.legal],
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '51',
@@ -688,6 +737,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '52',
@@ -701,6 +751,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '53',
@@ -714,6 +765,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '54',
@@ -727,6 +779,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '55',
@@ -741,6 +794,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '56',
@@ -754,6 +808,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '57',
@@ -767,6 +822,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '58',
@@ -780,6 +836,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '59',
@@ -793,6 +850,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '60',
@@ -806,6 +864,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '61',
@@ -819,6 +878,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '62',
@@ -832,6 +892,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '63',
@@ -846,6 +907,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '64',
@@ -860,6 +922,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '65',
@@ -873,6 +936,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '66',
@@ -886,6 +950,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '67',
@@ -899,6 +964,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '68',
@@ -912,6 +978,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '69',
@@ -925,6 +992,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '70',
@@ -939,6 +1007,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '71',
@@ -952,6 +1021,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '72',
@@ -965,6 +1035,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '73',
@@ -978,6 +1049,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '74',
@@ -991,6 +1063,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '75',
@@ -1004,6 +1077,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '76',
@@ -1017,6 +1091,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '77',
@@ -1030,6 +1105,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '78',
@@ -1043,6 +1119,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '79',
@@ -1056,6 +1133,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '80',
@@ -1069,6 +1147,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '81',
@@ -1082,6 +1161,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '82',
@@ -1095,6 +1175,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '83',
@@ -1108,6 +1189,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '84',
@@ -1122,6 +1204,7 @@ const organizations: Array<Organization> = [
 
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '85',
@@ -1137,6 +1220,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '86',
@@ -1150,6 +1234,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '87',
@@ -1163,6 +1248,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '88',
@@ -1176,6 +1262,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '89',
@@ -1189,6 +1276,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '90',
@@ -1202,6 +1290,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '91',
@@ -1215,6 +1304,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '92',
@@ -1229,6 +1319,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '93',
@@ -1242,6 +1333,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '94',
@@ -1255,6 +1347,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '95',
@@ -1269,6 +1362,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '96',
@@ -1282,6 +1376,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '97',
@@ -1297,6 +1392,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '98',
@@ -1310,6 +1406,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '99',
@@ -1323,6 +1420,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '100',
@@ -1336,6 +1434,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '101',
@@ -1350,6 +1449,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '102',
@@ -1363,6 +1463,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '103',
@@ -1376,6 +1477,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '104',
@@ -1391,6 +1493,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '105',
@@ -1404,6 +1507,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '106',
@@ -1417,6 +1521,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '107',
@@ -1430,6 +1535,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '108',
@@ -1443,6 +1549,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '109',
@@ -1456,6 +1563,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '110',
@@ -1469,6 +1577,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '111',
@@ -1482,6 +1591,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '112',
@@ -1495,6 +1605,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '113',
@@ -1508,6 +1619,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '114',
@@ -1521,6 +1633,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '115',
@@ -1534,6 +1647,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '116',
@@ -1547,6 +1661,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '117',
@@ -1560,6 +1675,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '118',
@@ -1574,6 +1690,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '119',
@@ -1587,6 +1704,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '120',
@@ -1600,6 +1718,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '121',
@@ -1613,6 +1732,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '122',
@@ -1626,6 +1746,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '123',
@@ -1640,6 +1761,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '124',
@@ -1654,6 +1776,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '125',
@@ -1667,6 +1790,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '126',
@@ -1680,6 +1804,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '127',
@@ -1693,6 +1818,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '128',
@@ -1707,6 +1833,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '129',
@@ -1720,6 +1847,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '130',
@@ -1733,6 +1861,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '131',
@@ -1746,6 +1875,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '132',
@@ -1759,6 +1889,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '133',
@@ -1772,6 +1903,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '134',
@@ -1785,6 +1917,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '135',
@@ -1798,6 +1931,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '136',
@@ -1811,6 +1945,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '137',
@@ -1824,6 +1959,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '138',
@@ -1837,6 +1973,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '139',
@@ -1850,6 +1987,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '140',
@@ -1863,6 +2001,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '141',
@@ -1877,6 +2016,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '142',
@@ -1890,6 +2030,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '143',
@@ -1903,6 +2044,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '144',
@@ -1917,6 +2059,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '145',
@@ -1930,6 +2073,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '146',
@@ -1944,6 +2088,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '147',
@@ -1958,6 +2103,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '148',
@@ -1971,6 +2117,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '149',
@@ -1984,6 +2131,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '150',
@@ -1997,6 +2145,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '151',
@@ -2010,6 +2159,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '152',
@@ -2023,6 +2173,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '153',
@@ -2036,6 +2187,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '154',
@@ -2049,6 +2201,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '155',
@@ -2062,6 +2215,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '156',
@@ -2075,6 +2229,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '157',
@@ -2088,6 +2243,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '158',
@@ -2101,6 +2257,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '159',
@@ -2114,6 +2271,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '160',
@@ -2127,6 +2285,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '161',
@@ -2141,6 +2300,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '162',
@@ -2154,6 +2314,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '163',
@@ -2167,6 +2328,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '164',
@@ -2180,6 +2342,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '165',
@@ -2193,6 +2356,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '166',
@@ -2206,6 +2370,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '167',
@@ -2219,6 +2384,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '168',
@@ -2232,6 +2398,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '169',
@@ -2245,6 +2412,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '170',
@@ -2258,6 +2426,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '171',
@@ -2271,6 +2440,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '172',
@@ -2284,6 +2454,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '173',
@@ -2297,6 +2468,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '174',
@@ -2310,6 +2482,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '175',
@@ -2323,6 +2496,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '176',
@@ -2336,6 +2510,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '177',
@@ -2349,6 +2524,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '178',
@@ -2362,6 +2538,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '179',
@@ -2375,6 +2552,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '180',
@@ -2388,6 +2566,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '181',
@@ -2401,6 +2580,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '182',
@@ -2414,6 +2594,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '183',
@@ -2427,6 +2608,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '184',
@@ -2440,6 +2622,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '185',
@@ -2453,6 +2636,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '186',
@@ -2466,6 +2650,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '187',
@@ -2479,6 +2664,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '188',
@@ -2492,6 +2678,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '189',
@@ -2505,6 +2692,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '190',
@@ -2518,6 +2706,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '191',
@@ -2531,6 +2720,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '192',
@@ -2544,6 +2734,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '193',
@@ -2558,6 +2749,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '194',
@@ -2572,6 +2764,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '195',
@@ -2585,6 +2778,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '196',
@@ -2599,6 +2793,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '197',
@@ -2612,6 +2807,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '198',
@@ -2625,6 +2821,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '199',
@@ -2639,6 +2836,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '200',
@@ -2652,6 +2850,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '201',
@@ -2665,6 +2864,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '202',
@@ -2678,6 +2878,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '203',
@@ -2691,6 +2892,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '204',
@@ -2704,6 +2906,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '205',
@@ -2717,6 +2920,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '206',
@@ -2730,6 +2934,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '207',
@@ -2743,6 +2948,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '208',
@@ -2756,6 +2962,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '209',
@@ -2769,6 +2976,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '210',
@@ -2782,6 +2990,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '211',
@@ -2795,6 +3004,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '212',
@@ -2808,6 +3018,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '213',
@@ -2821,6 +3032,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '214',
@@ -2834,6 +3046,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '215',
@@ -2847,6 +3060,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '216',
@@ -2860,6 +3074,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '217',
@@ -2873,6 +3088,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '218',
@@ -2886,6 +3102,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '219',
@@ -2899,6 +3116,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '220',
@@ -2912,6 +3130,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '221',
@@ -2925,6 +3144,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '222',
@@ -2938,6 +3158,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '223',
@@ -2951,6 +3172,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '224',
@@ -2964,6 +3186,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '225',
@@ -2977,6 +3200,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '226',
@@ -2990,6 +3214,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '227',
@@ -3003,6 +3228,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '228',
@@ -3018,6 +3244,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '229',
@@ -3031,6 +3258,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '230',
@@ -3044,6 +3272,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '231',
@@ -3057,6 +3286,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '232',
@@ -3070,6 +3300,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '233',
@@ -3083,6 +3314,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '234',
@@ -3096,6 +3328,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '235',
@@ -3109,6 +3342,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '236',
@@ -3122,6 +3356,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '237',
@@ -3135,6 +3370,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '238',
@@ -3148,6 +3384,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '239',
@@ -3161,6 +3398,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '240',
@@ -3174,6 +3412,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '241',
@@ -3187,6 +3426,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '242',
@@ -3200,6 +3440,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '243',
@@ -3213,6 +3454,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '244',
@@ -3226,6 +3468,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '245',
@@ -3239,6 +3482,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '246',
@@ -3252,6 +3496,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '247',
@@ -3265,6 +3510,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '248',
@@ -3278,6 +3524,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '249',
@@ -3291,6 +3538,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '250',
@@ -3304,6 +3552,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '251',
@@ -3317,6 +3566,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '252',
@@ -3330,6 +3580,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '253',
@@ -3343,6 +3594,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '254',
@@ -3356,6 +3608,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '255',
@@ -3369,6 +3622,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '256',
@@ -3382,6 +3636,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '257',
@@ -3395,6 +3650,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '258',
@@ -3408,6 +3664,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '259',
@@ -3421,6 +3678,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '260',
@@ -3434,6 +3692,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '261',
@@ -3447,6 +3706,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '262',
@@ -3461,6 +3721,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '263',
@@ -3474,6 +3735,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '264',
@@ -3487,6 +3749,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '265',
@@ -3500,6 +3763,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '266',
@@ -3513,6 +3777,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '267',
@@ -3526,6 +3791,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '268',
@@ -3539,6 +3805,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '269',
@@ -3552,6 +3819,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '270',
@@ -3565,6 +3833,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '271',
@@ -3578,6 +3847,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '272',
@@ -3591,6 +3861,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '273',
@@ -3604,6 +3875,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '274',
@@ -3617,6 +3889,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '275',
@@ -3630,6 +3903,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '276',
@@ -3643,6 +3917,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '277',
@@ -3656,6 +3931,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '278',
@@ -3669,6 +3945,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '279',
@@ -3682,6 +3959,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '280',
@@ -3695,6 +3973,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '281',
@@ -3708,6 +3987,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '282',
@@ -3721,6 +4001,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '283',
@@ -3734,6 +4015,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '284',
@@ -3747,6 +4029,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '285',
@@ -3760,6 +4043,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '286',
@@ -3773,6 +4057,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '287',
@@ -3786,6 +4071,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '288',
@@ -3799,6 +4085,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '289',
@@ -3814,6 +4101,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '290',
@@ -3827,6 +4115,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '291',
@@ -3840,6 +4129,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '292',
@@ -3854,6 +4144,7 @@ const organizations: Array<Organization> = [
 
     status: RelationshipStatus.noRelation,
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '293',
@@ -3867,6 +4158,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '294',
@@ -3880,6 +4172,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '295',
@@ -3893,6 +4186,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '296',
@@ -3906,6 +4200,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '297',
@@ -3919,6 +4214,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '298',
@@ -3931,6 +4227,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
   {
     id: '299',
@@ -3945,6 +4242,7 @@ const organizations: Array<Organization> = [
     status: RelationshipStatus.noRelation,
 
     image: 'https://source.unsplash.com/Ch_QF4IocbU/150x150',
+    compatibilityScore: 0,
   },
 ];
 
