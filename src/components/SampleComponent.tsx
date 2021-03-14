@@ -34,12 +34,12 @@ const SampleComponent = (props: Props): JSX.Element => {
     });
   };
   return (
-    <div className='sample-component'>
-      <p className='sample-component-text'>{JSON.stringify(props.organizations)}</p>
-      <button type='button' className='btn btn-outline-primary' onClick={onClick}>
+    <div className="sample-component">
+      <p className="sample-component-text">{JSON.stringify(props.organizations)}</p>
+      <button type="button" className="btn btn-outline-primary" onClick={onClick}>
         Add Matched Org
       </button>
-      <a href='/login'>Go to login</a>
+      <a href="/login">Go to login</a>
     </div>
   );
 };
@@ -60,4 +60,7 @@ const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => {
   );
 };
 
-export default connect<StateProps, DispatchProps, Record<string, unknown>, RootState>(mapStateToProps, mapDispatchToProps)(SampleComponent);
+export default connect<StateProps, DispatchProps, Record<string, unknown>, RootState>(
+  mapStateToProps,
+  mapDispatchToProps
+)(SampleComponent);

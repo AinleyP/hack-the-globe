@@ -1,5 +1,12 @@
 /* Imports from local files */
-import { ADD_MATCHED_ORG, ADD_SUGGESTED_ORG, ADD_ORG, ACCEPT_REQUEST_FROM_ORG, SEND_REQUEST_TO_ORG, SUGGEST_ORGS } from '../actions/actionTypes';
+import {
+  ADD_MATCHED_ORG,
+  ADD_SUGGESTED_ORG,
+  ADD_ORG,
+  ACCEPT_REQUEST_FROM_ORG,
+  SEND_REQUEST_TO_ORG,
+  SUGGEST_ORGS,
+} from '../actions/actionTypes';
 import Organization from '../types/organization';
 import RelationshipStatus from '../types/relationshipStatus';
 import { OrganizationsAction } from '../actions/';
@@ -83,7 +90,10 @@ const organizationReducer = (state = defaultState, action: OrganizationsAction):
             // 100 * (num of fulfilled resources / num of required resources) - num of resources offered
             score +=
               org.resourcesOffered && action.payload.resourcesRequired
-                ? (100 * action.payload.resourcesRequired.filter((resource: Resource) => org.resourcesOffered?.includes(resource)).length) /
+                ? (100 *
+                    action.payload.resourcesRequired.filter((resource: Resource) =>
+                      org.resourcesOffered?.includes(resource)
+                    ).length) /
                     action.payload.resourcesRequired.length -
                   org.resourcesOffered?.length
                 : 0;
